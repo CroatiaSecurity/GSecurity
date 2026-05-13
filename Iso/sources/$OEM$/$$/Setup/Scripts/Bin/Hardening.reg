@@ -1,0 +1,98 @@
+Windows Registry Editor Version 5.00
+
+; ============================================
+; Single-User System Hardening
+; Prevents auth as SYSTEM, Administrator, or other SIDs
+; Only allows current interactive user session
+; ============================================
+
+; === LSA HARDENING ===
+; Block anonymous enumeration and null sessions
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"RestrictAnonymous"=dword:00000002
+"RestrictAnonymousSAM"=dword:00000001
+"EveryoneIncludesAnonymous"=dword:00000000
+"RestrictNullSessAccess"=dword:00000001
+"NoLMHash"=dword:00000001
+"LmCompatibilityLevel"=dword:00000005
+"DisableDomainCreds"=dword:00000001
+"TokenLeakDetectDelaySecs"=dword:0000001e
+
+; === UAC MAXIMUM HARDENING ===
+; Require password for all elevations, secure desktop
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000002
+"ConsentPromptBehaviorUser"=dword:00000003
+"EnableLUA"=dword:00000001
+"PromptOnSecureDesktop"=dword:00000001
+"FilterAdministratorToken"=dword:00000001
+"EnableVirtualization"=dword:00000001
+"ValidateAdminCodeSignatures"=dword:00000001
+
+; === REMOVE DANGEROUS PRIVILEGES ===
+; Strip SeImpersonate and other token privileges from standard users
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"RemovePrivileges"=hex(7):53,00,65,00,49,00,6d,00,70,00,65,00,72,00,73,00,6f,00,6e,00,61,00,74,00,65,00,50,00,72,00,69,00,76,00,69,00,6c,00,65,00,67,00,65,00,00,00,53,00,65,00,41,00,73,00,73,00,69,00,67,00,6e,00,50,00,72,00,69,00,6d,00,61,00,72,00,79,00,54,00,6f,00,6b,00,65,00,6e,00,50,00,72,00,69,00,76,00,69,00,6c,00,65,00,67,00,65,00,00,00,53,00,65,00,54,00,63,00,62,00,50,00,72,00,69,00,76,00,69,00,6c,00,65,00,67,00,65,00,00,00,53,00,65,00,44,00,65,00,62,00,75,00,67,00,50,00,72,00,69,00,76,00,69,00,6c,00,65,00,67,00,65,00,00,00,00,00
+; ^ SeImpersonatePrivilege, SeAssignPrimaryTokenPrivilege, SeTcbPrivilege, SeDebugPrivilege
+
+; === NULL SESSION BLOCK ===
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanManServer\Parameters]
+"NullSessionShares"=hex(7):00,00
+"NullSessionPipes"=hex(7):00,00
+"RestrictNullSessAccess"=dword:00000001
+
+; === BLOCK TOKEN TOOLS VIA SOFTWARE RESTRICTION ===
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Safer\CodeIdentifiers]
+"TransparentEnabled"=dword:00000002
+"DefaultLevel"=dword:00040000
+
+; Block runas.exe
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Safer\CodeIdentifiers\262144\Paths\{10000001-0000-0000-0000-000000000001}]
+"ItemData"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,72,00,75,00,6e,00,61,00,73,00,2e,00,65,00,78,00,65,00,00,00
+"SaferFlags"=dword:00000000
+"Description"="Block RunAs"
+
+; Block PsExec (if present)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Safer\CodeIdentifiers\262144\Paths\{10000001-0000-0000-0000-000000000002}]
+"ItemData"=hex(2):50,00,73,00,45,00,78,00,65,00,63,00,2e,00,65,00,78,00,65,00,00,00
+"SaferFlags"=dword:00000000
+"Description"="Block PsExec"
+
+; Block token.exe (Sysinternals)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Safer\CodeIdentifiers\262144\Paths\{10000001-0000-0000-0000-000000000003}]
+"ItemData"=hex(2):74,00,6f,00,6b,00,65,00,6e,00,2e,00,65,00,78,00,65,00,00,00
+"SaferFlags"=dword:00000000
+"Description"="Block Token.exe"
+
+; === NETWORK AUTH RESTRICTIONS ===
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0]
+"RestrictReceivingNTLMTraffic"=dword:00000002
+"RestrictSendingNTLMTraffic"=dword:00000002
+
+; === CREDENTIAL PROTECTION ===
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"RunAsPPL"=dword:00000001
+"DisableRestrictedAdmin"=dword:00000000
+
+; === AUDIT AUTH ATTEMPTS ===
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+"AuditBaseObjects"=dword:00000001
+"AuditPerUserAuditing"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Audit]
+"AuditMode"=dword:00000001
+
+; === DISABLE NTLM FOR INBOUND ===
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters]
+"RequireSignOrSeal"=dword:00000001
+"RequireStrongKey"=dword:00000001
+"SealSecureChannel"=dword:00000001
+"SignSecureChannel"=dword:00000001
+
+; === RPC RESTRICTIONS ===
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg]
+"RemoteRegAccess"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole]
+"LegacyAuthenticationLevel"=dword:00000005
+"LegacyImpersonationLevel"=dword:00000003

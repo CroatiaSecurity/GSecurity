@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"HungAppTimeout"="4000"
+"WaitToKillAppTimeout"="5000"
+"AutoEndTasks"="1"
+"ForegroundLockTimeout"=dword:000249f0
+"MenuShowDelay"="0"
+
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseHoverTime"="100"
+
+[HKEY_LOCAL_MACHINE\System\ControlSet001\Services\Tcpip\Parameters]
+"EnablePMTUBHDetect"=dword:00000001
+"SackOpts"=dword:00000001
+"DefaultTTL"=dword:00000040
+"TcpMaxDupAcks"=dword:00000002
+"EnablePMTUDiscovery"=dword:00000001

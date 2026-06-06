@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <unattend xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
-	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Interactive&PEMode=Default&WindowsEditionMode=Interactive&ProcessorArchitecture=amd64&BypassRequirementsCheck=true&BypassNetworkCheck=true&HidePowerShellWindows=true&KeepSensitiveFiles=true&ComputerNameMode=Custom&ComputerName=WINDOWS-PC&TimeZoneMode=Implicit&UserAccountMode=Unattended&AccountName0=Admin&AccountDisplayName0=&AccountPassword0=&AccountGroup0=Administrators&AutoLogonMode=Own&PasswordExpirationMode=Unlimited&LockoutMode=Disabled&HideFiles=HiddenSystem&ShowFileExtensions=true&ClassicContextMenu=true&HideInfoTip=true&LaunchToThisPC=true&ShowEndTask=true&TaskbarSearch=Label&TaskbarIconsMode=Default&DisableWidgets=true&HideTaskViewButton=true&ShowAllTrayIcons=true&DisableBingResults=true&StartTilesMode=Empty&StartPinsMode=Empty&DisableWindowsUpdate=true&DisableSmartScreen=true&DisableFastStartup=true&DisableSystemRestore=true&EnableLongPaths=true&HardenSystemDriveAcl=true&DeleteJunctions=true&AllowPowerShellScripts=true&PreventAutomaticReboot=true&TurnOffSystemSounds=true&DisableAppSuggestions=true&PreventDeviceEncryption=true&HideEdgeFre=true&DisableEdgeStartupBoost=true&MakeEdgeUninstallable=true&CoreIsolationMode=Disabled&DeleteWindowsOld=true&DisableAutomaticRestartSignOn=true&EffectsMode=Appearance&DeleteEdgeDesktopIcon=true&DesktopIconsMode=Default&StartFoldersMode=Custom&StartFolderDocuments=true&StartFolderDownloads=true&StartFolderFileExplorer=true&StartFolderMusic=true&StartFolderNetwork=true&StartFolderPersonalFolder=true&StartFolderPictures=true&StartFolderSettings=true&StartFolderVideos=true&WifiMode=Skip&ExpressSettings=DisableAll&LockKeysMode=Configure&CapsLockInitial=Off&CapsLockBehavior=Toggle&NumLockInitial=On&NumLockBehavior=Toggle&ScrollLockInitial=Off&ScrollLockBehavior=Toggle&StickyKeysMode=Disabled&ColorMode=Default&WallpaperMode=Default&LockScreenMode=Default&RestartExplorer=true&AppLockerMode=Skip-->
+	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Interactive&PEMode=Default&WindowsEditionMode=Interactive&ProcessorArchitecture=amd64&BypassRequirementsCheck=true&BypassNetworkCheck=true&HidePowerShellWindows=true&KeepSensitiveFiles=true&ComputerNameMode=Custom&ComputerName=WINDOWS-PC&TimeZoneMode=Implicit&UserAccountMode=Unattended&AccountName0=Admin&AccountDisplayName0=&AccountPassword0=&AccountGroup0=Administrators&AutoLogonMode=Own&PasswordExpirationMode=Unlimited&LockoutMode=Disabled&HideFiles=HiddenSystem&ShowFileExtensions=true&ClassicContextMenu=true&HideInfoTip=true&LaunchToThisPC=true&ShowEndTask=true&TaskbarSearch=Label&TaskbarIconsMode=Default&DisableWidgets=true&HideTaskViewButton=true&ShowAllTrayIcons=true&DisableBingResults=true&StartTilesMode=Empty&StartPinsMode=Empty&DisableWindowsUpdate=true&DisableSmartScreen=true&DisableFastStartup=true&DisableSystemRestore=true&EnableLongPaths=true&HardenSystemDriveAcl=true&DeleteJunctions=true&AllowPowerShellScripts=true&PreventAutomaticReboot=true&TurnOffSystemSounds=true&DisableAppSuggestions=true&PreventDeviceEncryption=true&HideEdgeFre=true&DisableEdgeStartupBoost=true&MakeEdgeUninstallable=true&CoreIsolationMode=Disabled&DeleteWindowsOld=true&DisableAutomaticRestartSignOn=true&EffectsMode=Appearance&DeleteEdgeDesktopIcon=true&DesktopIconsMode=Default&StartFoldersMode=Custom&StartFolderDocuments=true&StartFolderDownloads=true&StartFolderFileExplorer=true&StartFolderMusic=true&StartFolderNetwork=true&StartFolderPersonalFolder=true&StartFolderPictures=true&StartFolderSettings=true&StartFolderVideos=true&WifiMode=Skip&ExpressSettings=DisableAll&LockKeysMode=Configure&CapsLockInitial=Off&CapsLockBehavior=Toggle&NumLockInitial=On&NumLockBehavior=Toggle&ScrollLockInitial=Off&ScrollLockBehavior=Toggle&StickyKeysMode=Disabled&ColorMode=Default&WallpaperMode=Default&LockScreenMode=Default&UserOnceScript0=Windows+Registry+Editor+Version+5.00%0D%0A%0D%0A%3B+Sminkica%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CShell%5CBags%5C1%5CDesktop%5D%0D%0A%22FFlags%22%3Ddword%3A40200224%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CControl+Panel%5CDesktop%5D%0D%0A%22AutoColorization%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CControl+Panel%5CInternational%5D%0D%0A%22sShortDate%22%3D%22ddd+dd+MMM+yyyy%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22ShowSecondsInSystemClock%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5CAdvanced%5D%0D%0A%22ShowSecondsInSystemClock%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5C*%5Cshell%5CResetNTFSPermissions%5D%0D%0A%22MUIVerb%22%3D%22Reset+Permissions%22%0D%0A%22NoWorkingDirectory%22%3D%22%22%0D%0A%22Position%22%3D%22middle%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5C*%5Cshell%5CResetNTFSPermissions%5CCommand%5D%0D%0A%40%3D%22powershell.exe+-windowstyle+hidden+-command+%5C%22Start-Process+cmd.exe+-ArgumentList+%27%2Fc+icacls+%5C%5C%5C%22%251%5C%5C%5C%22+%2Freset+%26+pause%27+-Verb+RunAs%5C%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDirectory%5Cshell%5CResetNTFSPermissions%5D%0D%0A%22MUIVerb%22%3D%22Reset+Permissions%22%0D%0A%22SubCommands%22%3D%22%22%0D%0A%22Position%22%3D%22middle%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDirectory%5Cshell%5CResetNTFSPermissions%5CShell%5C01ResetPermissionsRootFolder%5D%0D%0A%22MUIVerb%22%3D%22Reset+permissions+of+this+folder+only%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDirectory%5Cshell%5CResetNTFSPermissions%5CShell%5C01ResetPermissionsRootFolder%5Ccommand%5D%0D%0A%40%3D%22powershell.exe+-windowstyle+hidden+-command+%5C%22Start-Process+cmd.exe+-ArgumentList+%27%2Fc+icacls+%5C%5C%5C%22%251%5C%5C%5C%22+%2Freset+%26+pause%27+-Verb+RunAs%5C%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDirectory%5Cshell%5CResetNTFSPermissions%5CShell%5C02ResetPermissionsAllFolders%5D%0D%0A%22MUIVerb%22%3D%22Reset+permissions+of+this+folder%2C+subfolders+and+files%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDirectory%5Cshell%5CResetNTFSPermissions%5CShell%5C02ResetPermissionsAllFolders%5Ccommand%5D%0D%0A%40%3D%22powershell.exe+-windowstyle+hidden+-command+%5C%22Start-Process+cmd.exe+-ArgumentList+%27%2Fc+icacls+%5C%5C%5C%22%251%5C%5C%5C%22+%2Freset+%2Ft+%2Fc+%2Fl+%26+pause%27+-Verb+RunAs%5C%22%22%0D%0A%0D%0A%5B-HKEY_CLASSES_ROOT%5C*%5Cshell%5CTakeOwnership%5D%0D%0A%0D%0A%5B-HKEY_CLASSES_ROOT%5C*%5Cshell%5Crunas%5D%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5C*%5Cshell%5CTakeOwnership%5D%0D%0A%40%3D%22Take+Ownership%22%0D%0A%22Extended%22%3D-%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%22NoWorkingDirectory%22%3D%22%22%0D%0A%22NeverDefault%22%3D%22%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5C*%5Cshell%5CTakeOwnership%5Ccommand%5D%0D%0A%40%3D%22powershell+-windowstyle+hidden+-command+%5C%22Start-Process+cmd+-ArgumentList+%27%2Fc+takeown+%2Ff+%5C%5C%5C%22%251%5C%5C%5C%22+%26%26+icacls+%5C%5C%5C%22%251%5C%5C%5C%22+%2Fgrant+*S-1-3-4%3AF+%2Ft+%2Fc+%2Fl%27+-Verb+runAs%5C%22%22%0D%0A%22IsolatedCommand%22%3D+%22powershell+-windowstyle+hidden+-command+%5C%22Start-Process+cmd+-ArgumentList+%27%2Fc+takeown+%2Ff+%5C%5C%5C%22%251%5C%5C%5C%22+%26%26+icacls+%5C%5C%5C%22%251%5C%5C%5C%22+%2Fgrant+*S-1-3-4%3AF+%2Ft+%2Fc+%2Fl%27+-Verb+runAs%5C%22%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDirectory%5Cshell%5CTakeOwnership%5D%0D%0A%40%3D%22Take+Ownership%22%0D%0A%22AppliesTo%22%3D%22NOT+%28System.ItemPathDisplay%3A%3D%5C%22C%3A%5C%5CUsers%5C%22+OR+System.ItemPathDisplay%3A%3D%5C%22C%3A%5C%5CProgramData%5C%22+OR+System.ItemPathDisplay%3A%3D%5C%22C%3A%5C%5CWindows%5C%22+OR+System.ItemPathDisplay%3A%3D%5C%22C%3A%5C%5CWindows%5C%5CSystem32%5C%22+OR+System.ItemPathDisplay%3A%3D%5C%22C%3A%5C%5CProgram+Files%5C%22+OR+System.ItemPathDisplay%3A%3D%5C%22C%3A%5C%5CProgram+Files+%28x86%29%5C%22%29%22%0D%0A%22Extended%22%3D-%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%22NoWorkingDirectory%22%3D%22%22%0D%0A%22Position%22%3D%22middle%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDirectory%5Cshell%5CTakeOwnership%5Ccommand%5D%0D%0A%40%3D%22powershell+-windowstyle+hidden+-command+%5C%22%24Y+%3D+%28%24null+%7C+choice%29.Substring%281%2C1%29%3B+Start-Process+cmd+-ArgumentList+%28%27%2Fc+takeown+%2Ff+%5C%5C%5C%22%251%5C%5C%5C%22+%2Fr+%2Fd+%27+%2B+%24Y+%2B+%27+%26%26+icacls+%5C%5C%5C%22%251%5C%5C%5C%22+%2Fgrant+*S-1-3-4%3AF+%2Ft+%2Fc+%2Fl+%2Fq%27%29+-Verb+runAs%5C%22%22%0D%0A%22IsolatedCommand%22%3D%22powershell+-windowstyle+hidden+-command+%5C%22%24Y+%3D+%28%24null+%7C+choice%29.Substring%281%2C1%29%3B+Start-Process+cmd+-ArgumentList+%28%27%2Fc+takeown+%2Ff+%5C%5C%5C%22%251%5C%5C%5C%22+%2Fr+%2Fd+%27+%2B+%24Y+%2B+%27+%26%26+icacls+%5C%5C%5C%22%251%5C%5C%5C%22+%2Fgrant+*S-1-3-4%3AF+%2Ft+%2Fc+%2Fl+%2Fq%27%29+-Verb+runAs%5C%22%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDrive%5Cshell%5Crunas%5D%0D%0A%40%3D%22Take+Ownership%22%0D%0A%22Extended%22%3D-%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%22NoWorkingDirectory%22%3D%22%22%0D%0A%22Position%22%3D%22middle%22%0D%0A%22AppliesTo%22%3D%22NOT+%28System.ItemPathDisplay%3A%3D%5C%22C%3A%5C%5C%5C%22%29%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDrive%5Cshell%5Crunas%5Ccommand%5D%0D%0A%40%3D%22cmd.exe+%2Fc+takeown+%2Ff+%5C%22%251%5C%5C%5C%22+%2Fr+%2Fd+y+%26%26+icacls+%5C%22%251%5C%5C%5C%22+%2Fgrant+*S-1-3-4%3AF+%2Ft+%2Fc%22%0D%0A%22IsolatedCommand%22%3D%22cmd.exe+%2Fc+takeown+%2Ff+%5C%22%251%5C%5C%5C%22+%2Fr+%2Fd+y+%26%26+icacls+%5C%22%251%5C%5C%5C%22+%2Fgrant+*S-1-3-4%3AF+%2Ft+%2Fc%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDirectory%5CBackground%5Cshell%5CPowerShellAsAdmin%5D%0D%0A%40%3D%22Open+PowerShell+window+here+as+administrator%22%0D%0A%22Extended%22%3D-%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%22Icon%22%3D%22powershell.exe%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDirectory%5CBackground%5Cshell%5CPowerShellAsAdmin%5Ccommand%5D%0D%0A%40%3D%22cmd+%2Fc+reg+add+hkcu%5C%5Csoftware%5C%5C_dir+%2Fd+%5C%22%25v%5C%22+%2Ff+%26+start+powershell+-WindowS+H+-noP+-c+Start-Process+-v+RunAs+powershell.exe+%27-noL+-noE+-c+cd+-literalP+%28gp+hkcu%3A%5C%5Csoftware%5C%5C_dir%29.%5C%5C%5C%22%5C%5C%5C%22%5C%5C%5C%22%28default%29%5C%5C%5C%22%5C%5C%5C%22%5C%5C%5C%22%3B+ri+hkcu%3A%5C%5Csoftware%5C%5C_dir%27%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDirectory%5Cshell%5CPowerShellAsAdmin%5D%0D%0A%40%3D%22Open+PowerShell+window+here+as+administrator%22%0D%0A%22Extended%22%3D-%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%22Icon%22%3D%22powershell.exe%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDirectory%5Cshell%5CPowerShellAsAdmin%5Ccommand%5D%0D%0A%40%3D%22cmd+%2Fc+reg+add+hkcu%5C%5Csoftware%5C%5C_dir+%2Fd+%5C%22%25v%5C%22+%2Ff+%26+start+powershell+-WindowS+H+-noP+-c+Start-Process+-v+RunAs+powershell.exe+%27-noL+-noE+-c+cd+-literalP+%28gp+hkcu%3A%5C%5Csoftware%5C%5C_dir%29.%5C%5C%5C%22%5C%5C%5C%22%5C%5C%5C%22%28default%29%5C%5C%5C%22%5C%5C%5C%22%5C%5C%5C%22%3B+ri+hkcu%3A%5C%5Csoftware%5C%5C_dir%27%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDrive%5Cshell%5CPowerShellAsAdmin%5D%0D%0A%40%3D%22Open+PowerShell+window+here+as+administrator%22%0D%0A%22Extended%22%3D-%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%22Icon%22%3D%22powershell.exe%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDrive%5Cshell%5CPowerShellAsAdmin%5Ccommand%5D%0D%0A%40%3D%22cmd+%2Fc+reg+add+hkcu%5C%5Csoftware%5C%5C_dir+%2Fd+%5C%22%25v%5C%22+%2Ff+%26+start+powershell+-WindowS+H+-noP+-c+Start-Process+-v+RunAs+powershell.exe+%27-noL+-noE+-c+cd+-literalP+%28gp+hkcu%3A%5C%5Csoftware%5C%5C_dir%29.%5C%5C%5C%22%5C%5C%5C%22%5C%5C%5C%22%28default%29%5C%5C%5C%22%5C%5C%5C%22%5C%5C%5C%22%3B+ri+hkcu%3A%5C%5Csoftware%5C%5C_dir%27%22%0D%0A%0D%0A%5B-HKEY_CLASSES_ROOT%5CLibraryFolder%5CBackground%5Cshell%5CPowerShellAsAdmin%5D%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CSystem%5D%0D%0A%22EnableLinkedConnections%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDirectory%5Cshell%5COpenCmdHereAsAdmin%5D%0D%0A%40%3D%22Open+command+window+here+as+administrator%22%0D%0A%22Extended%22%3D-%0D%0A%22Icon%22%3D%22imageres.dll%2C-5324%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDirectory%5Cshell%5COpenCmdHereAsAdmin%5Ccommand%5D%0D%0A%40%3D%22cmd+%2Fc+echo%7Cset%2Fp%3D%5C%22%25L%5C%22%7Cpowershell+-NoP+-W+1+-NonI+-NoL+%5C%22SaPs+%27cmd%27+-Args+%27%2Fc+%5C%22%5C%22%5C%22cd+%2Fd%27%2C%24%28%5Bchar%5D34%2B%24Input%2B%5Bchar%5D34%29%2C%27%5E%26%5E%26+start+%2Fb+cmd.exe%5C%22%5C%22%5C%22%27+-Verb+RunAs%5C%22%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDirectory%5CBackground%5Cshell%5COpenCmdHereAsAdmin%5D%0D%0A%40%3D%22Open+command+window+here+as+administrator%22%0D%0A%22Extended%22%3D-%0D%0A%22Icon%22%3D%22imageres.dll%2C-5324%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDirectory%5CBackground%5Cshell%5COpenCmdHereAsAdmin%5Ccommand%5D%0D%0A%40%3D%22cmd+%2Fc+echo%7Cset%2Fp%3D%5C%22%25V%5C%22%7Cpowershell+-NoP+-W+1+-NonI+-NoL+%5C%22SaPs+%27cmd%27+-Args+%27%2Fc+%5C%22%5C%22%5C%22cd+%2Fd%27%2C%24%28%5Bchar%5D34%2B%24Input%2B%5Bchar%5D34%29%2C%27%5E%26%5E%26+start+%2Fb+cmd.exe%5C%22%5C%22%5C%22%27+-Verb+RunAs%5C%22%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDrive%5Cshell%5COpenCmdHereAsAdmin%5D%0D%0A%40%3D%22Open+command+window+here+as+administrator%22%0D%0A%22Extended%22%3D-%0D%0A%22Icon%22%3D%22imageres.dll%2C-5324%22%0D%0A%0D%0A%5BHKEY_CLASSES_ROOT%5CDrive%5Cshell%5COpenCmdHereAsAdmin%5Ccommand%5D%0D%0A%40%3D%22cmd+%2Fc+echo%7Cset%2Fp%3D%5C%22%25L%5C%22%7Cpowershell+-NoP+-W+1+-NonI+-NoL+%5C%22SaPs+%27cmd%27+-Args+%27%2Fc+%5C%22%5C%22%5C%22cd+%2Fd%27%2C%24%28%5Bchar%5D34%2B%24Input%2B%5Bchar%5D34%29%2C%27%5E%26%5E%26+start+%2Fb+cmd.exe%5C%22%5C%22%5C%22%27+-Verb+RunAs%5C%22%22%0D%0A%0D%0A%5B-HKEY_CLASSES_ROOT%5CLibraryFolder%5Cbackground%5Cshell%5COpenCmdHereAsAdmin%5D%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows%5CCurrentVersion%5CPolicies%5CSystem%5D%0D%0A%22EnableLinkedConnections%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CCABFolder%5CShell%5Crunas%5D%0D%0A%40%3D%22Install+this+update%22%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%22NeverDefault%22%3D%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CCABFolder%5CShell%5Crunas%5Ccommand%5D%0D%0A%40%3D%22cmd+%2Fk+dism+%2Fonline+%2Fadd-package+%2Fpackagepath%3A%5C%22%251%5C%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5C.vbs%5CShellNew%5D%0D%0A%22NullFile%22%3D%22%22%0D%0A%22ItemName%22%3Dhex%282%29%3A40%2C00%2C43%2C00%2C3A%2C00%2C5C%2C00%2C57%2C00%2C69%2C00%2C6E%2C00%2C64%2C00%2C6F%2C00%2C77%2C%5C%0D%0A00%2C73%2C00%2C5C%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6D%2C00%2C33%2C00%2C32%2C00%2C5C%2C00%2C77%2C00%2C%5C%0D%0A73%2C00%2C68%2C00%2C65%2C00%2C78%2C00%2C74%2C00%2C2E%2C00%2C64%2C00%2C6C%2C00%2C6C%2C00%2C2C%2C00%2C2D%2C00%2C34%2C00%2C38%2C%5C%0D%0A00%2C30%2C00%2C32%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5C.bat%5CShellNew%5D%0D%0A%22NullFile%22%3D%22%22%0D%0A%22ItemName%22%3Dhex%282%29%3A40%2C00%2C43%2C00%2C3A%2C00%2C5C%2C00%2C57%2C00%2C69%2C00%2C6E%2C00%2C64%2C00%2C6F%2C00%2C77%2C%5C%0D%0A00%2C73%2C00%2C5C%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6D%2C00%2C33%2C00%2C32%2C00%2C5C%2C00%2C61%2C00%2C%5C%0D%0A63%2C00%2C70%2C00%2C70%2C00%2C61%2C00%2C67%2C00%2C65%2C00%2C2E%2C00%2C64%2C00%2C6C%2C00%2C6C%2C00%2C2C%2C00%2C2D%2C00%2C36%2C%5C%0D%0A00%2C30%2C00%2C30%2C00%2C32%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5C.cmd%5CShellNew%5D%0D%0A%22NullFile%22%3D%22%22%0D%0A%22ItemName%22%3Dhex%282%29%3A40%2C00%2C43%2C00%2C3A%2C00%2C5C%2C00%2C57%2C00%2C69%2C00%2C6E%2C00%2C64%2C00%2C6F%2C00%2C77%2C%5C%0D%0A00%2C73%2C00%2C5C%2C00%2C53%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6D%2C00%2C33%2C00%2C32%2C00%2C5C%2C00%2C61%2C00%2C%5C%0D%0A63%2C00%2C70%2C00%2C70%2C00%2C61%2C00%2C67%2C00%2C65%2C00%2C2E%2C00%2C64%2C00%2C6C%2C00%2C6C%2C00%2C2C%2C00%2C2D%2C00%2C36%2C%5C%0D%0A00%2C30%2C00%2C30%2C00%2C33%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5C.reg%5CShellNew%5D%0D%0A%22NullFile%22%3D%22%22%0D%0A%22ItemName%22%3Dhex%282%29%3A40%2C00%2C43%2C00%2C3A%2C00%2C5C%2C00%2C57%2C00%2C69%2C00%2C6E%2C00%2C64%2C00%2C6F%2C00%2C77%2C%5C%0D%0A00%2C73%2C00%2C5C%2C00%2C72%2C00%2C65%2C00%2C67%2C00%2C65%2C00%2C64%2C00%2C69%2C00%2C74%2C00%2C2E%2C00%2C65%2C00%2C78%2C00%2C%5C%0D%0A65%2C00%2C2C%2C00%2C2D%2C00%2C33%2C00%2C30%2C00%2C39%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5C.ps1%5CShellNew%5D%0D%0A%22NullFile%22%3D%22%22%0D%0A%22ItemName%22%3Dhex%282%29%3A40%2C00%2C22%2C00%2C43%2C00%2C3A%2C00%2C5C%2C00%2C57%2C00%2C69%2C00%2C6E%2C00%2C64%2C00%2C6F%2C%5C%0D%0A00%2C77%2C00%2C73%2C00%2C5C%2C00%2C73%2C00%2C79%2C00%2C73%2C00%2C74%2C00%2C65%2C00%2C6D%2C00%2C33%2C00%2C32%2C00%2C5C%2C00%2C%5C%0D%0A77%2C00%2C69%2C00%2C6E%2C00%2C64%2C00%2C6F%2C00%2C77%2C00%2C73%2C00%2C70%2C00%2C6F%2C00%2C77%2C00%2C65%2C00%2C72%2C00%2C73%2C%5C%0D%0A00%2C68%2C00%2C65%2C00%2C6C%2C00%2C6C%2C00%2C5C%2C00%2C76%2C00%2C31%2C00%2C2E%2C00%2C30%2C00%2C5C%2C00%2C70%2C00%2C6F%2C00%2C%5C%0D%0A77%2C00%2C65%2C00%2C72%2C00%2C73%2C00%2C68%2C00%2C65%2C00%2C6C%2C00%2C6C%2C00%2C2E%2C00%2C65%2C00%2C78%2C00%2C65%2C00%2C22%2C%5C%0D%0A00%2C2C%2C00%2C2D%2C00%2C31%2C00%2C30%2C00%2C33%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5D%0D%0A%22MUIVerb%22%3D%22Run+or+modify...%22%0D%0A%22SubCommands%22%3D%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5Cshell%5C001RunwithPS%5D%0D%0A%22MUIVerb%22%3D%22Run+with+PowerShell%22%0D%0A%22Icon%22%3D%22powershell.exe%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5Cshell%5C001RunwithPS%5CCommand%5D%0D%0A%40%3D%22powershell.exe+%5C%22-Command%5C%22+%5C%22if%28%28Get-ExecutionPolicy+%29+-ne+%27AllSigned%27%29+%7B+Set-ExecutionPolicy+-Scope+Process+Bypass+%7D%3B+%26+%27%251%27%5C%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5Cshell%5C002RunwithPSElevated%5D%0D%0A%22MUIVerb%22%3D%22Run+with+PowerShell+as+administrator%22%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%22Icon%22%3D%22powershell.exe%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5Cshell%5C002RunwithPSElevated%5CCommand%5D%0D%0A%40%3D%22powershell.exe+%5C%22-Command%5C%22+%5C%22%5C%22%26+%7BStart-Process+PowerShell.exe+-ArgumentList+%27-ExecutionPolicy+RemoteSigned+-File+%5C%5C%5C%22%251%5C%5C%5C%22%27+-Verb+RunAs%7D%5C%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5Cshell%5C005EditwithISE%5D%0D%0A%22MUIVerb%22%3D%22Open+in+PowerShell+ISE%22%0D%0A%22Icon%22%3D%22powershell_ise.exe%22%0D%0A%22CommandFlags%22%3Ddword%3A00000020%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5Cshell%5C005EditwithISE%5CCommand%5D%0D%0A%40%3D%22C%3A%5C%5CWindows%5C%5CSystem32%5C%5CWindowsPowerShell%5C%5Cv1.0%5C%5Cpowershell_ise.exe+%5C%22%251%5C%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5Cshell%5C006EditwithISEelevated%5D%0D%0A%22MUIVerb%22%3D%22Open+in+PowerShell+ISE+as+administrator%22%0D%0A%22Icon%22%3D%22powershell_ise.exe%22%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5Cshell%5C006EditwithISEelevated%5CCommand%5D%0D%0A%40%3D%22PowerShell+-windowstyle+hidden+-Command+%5C%22Start-Process+cmd+-ArgumentList+%27%2Fs%2C%2Fc%2Cstart+PowerShell_ISE.exe+%5C%22%5C%22%251%5C%22%5C%22%27++-Verb+RunAs%5C%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5Cshell%5C007EditwithISEx86%5D%0D%0A%22MUIVerb%22%3D%22Open+in+PowerShell+ISE+%28x86%29%22%0D%0A%22Icon%22%3D%22powershell_ise.exe%22%0D%0A%22CommandFlags%22%3Ddword%3A00000020%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5Cshell%5C007EditwithISEx86%5CCommand%5D%0D%0A%40%3D%22C%3A%5C%5CWindows%5C%5CSyswow64%5C%5CWindowsPowerShell%5C%5Cv1.0%5C%5Cpowershell_ise.exe+%5C%22%251%5C%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5Cshell%5C008EditwithISEx86elevated%5D%0D%0A%22MUIVerb%22%3D%22Open+in+PowerShell+ISE+%28x86%29+as+administrator%22%0D%0A%22Icon%22%3D%22powershell_ise.exe%22%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5Cshell%5C008EditwithISEx86elevated%5CCommand%5D%0D%0A%40%3D%22PowerShell+-windowstyle+hidden+-Command+%5C%22Start-Process+cmd+-ArgumentList+%27%2Fs%2C%2Fc%2Cstart+%25windir%25%5C%5Csyswow64%5C%5CWindowsPowerShell%5C%5Cv1.0%5C%5Cpowershell_ise.exe+%5C%22%5C%22%251%5C%22%5C%22%27++-Verb+RunAs%5C%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5Cshell%5C009EditwithNotepad%5D%0D%0A%22MUIVerb%22%3D%22Open+in+Notepad%22%0D%0A%22Icon%22%3D%22notepad.exe%22%0D%0A%22CommandFlags%22%3Ddword%3A00000020%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5Cshell%5C009EditwithNotepad%5CCommand%5D%0D%0A%40%3D%22C%3A%5C%5CWindows%5C%5CSystem32%5C%5Cnotepad.exe+%5C%22%251%5C%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5Cshell%5C010EditwithNotepadElevated%5D%0D%0A%22MUIVerb%22%3D%22Open+in+Notepad+as+administrator%22%0D%0A%22Icon%22%3D%22notepad.exe%22%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CSystemFileAssociations%5C.ps1%5CShell%5Crun_edit%5Cshell%5C010EditwithNotepadElevated%5CCommand%5D%0D%0A%40%3D%22PowerShell+-windowstyle+hidden+-Command+%5C%22Start-Process+cmd+-ArgumentList+%27%2Fs%2C%2Fc%2Cstart+notepad.exe+%5C%22%5C%22%251%5C%22%5C%22%27++-Verb+RunAs%5C%22%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CMicrosoft%5CWindows%5CCurrentVersion%5CExplorer%5D%0D%0A%22MultipleInvokePromptMinimum%22%3Ddword%3A000000c8%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CMsi.Package%5Cshell%5CExtract%5D%0D%0A%40%3D%22Extract+the+contents%22%0D%0A%22NeverDefault%22%3D%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CMsi.Package%5Cshell%5CExtract%5Ccommand%5D%0D%0A%40%3D%22msiexec.exe+%2Fa+%5C%22%251%5C%22+%2Fqb+TARGETDIR%3D%5C%22%251+Contents%5C%22%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CClasses%5C*%5Cshell%5CGetFileHash%5D%0D%0A%22MUIVerb%22%3D%22Hash%22%0D%0A%22SubCommands%22%3D%22%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CClasses%5C*%5Cshell%5CGetFileHash%5Cshell%5C01SHA1%5D%0D%0A%22MUIVerb%22%3D%22SHA1%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CClasses%5C*%5Cshell%5CGetFileHash%5Cshell%5C01SHA1%5CCommand%5D%0D%0A%40%3D%22powershell.exe+-noexit+get-filehash+-literalpath+%27%251%27+-algorithm+SHA1+%7C+format-list%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CClasses%5C*%5Cshell%5CGetFileHash%5Cshell%5C02SHA256%5D%0D%0A%22MUIVerb%22%3D%22SHA256%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CClasses%5C*%5Cshell%5CGetFileHash%5Cshell%5C02SHA256%5CCommand%5D%0D%0A%40%3D%22powershell.exe+-noexit+get-filehash+-literalpath+%27%251%27+-algorithm+SHA256+%7C+format-list%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CClasses%5C*%5Cshell%5CGetFileHash%5Cshell%5C03SHA384%5D%0D%0A%22MUIVerb%22%3D%22SHA384%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CClasses%5C*%5Cshell%5CGetFileHash%5Cshell%5C03SHA384%5CCommand%5D%0D%0A%40%3D%22powershell.exe+-noexit+get-filehash+-literalpath+%27%251%27+-algorithm+SHA384+%7C+format-list%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CClasses%5C*%5Cshell%5CGetFileHash%5Cshell%5C04SHA512%5D%0D%0A%22MUIVerb%22%3D%22SHA512%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CClasses%5C*%5Cshell%5CGetFileHash%5Cshell%5C04SHA512%5CCommand%5D%0D%0A%40%3D%22powershell.exe+-noexit+get-filehash+-literalpath+%27%251%27+-algorithm+SHA512+%7C+format-list%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CClasses%5C*%5Cshell%5CGetFileHash%5Cshell%5C05MACTripleDES%5D%0D%0A%22MUIVerb%22%3D%22MACTripleDES%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CClasses%5C*%5Cshell%5CGetFileHash%5Cshell%5C05MACTripleDES%5CCommand%5D%0D%0A%40%3D%22powershell.exe+-noexit+get-filehash+-literalpath+%27%251%27+-algorithm+MACTripleDES+%7C+format-list%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CClasses%5C*%5Cshell%5CGetFileHash%5Cshell%5C06MD5%5D%0D%0A%22MUIVerb%22%3D%22MD5%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CClasses%5C*%5Cshell%5CGetFileHash%5Cshell%5C06MD5%5CCommand%5D%0D%0A%40%3D%22powershell.exe+-noexit+get-filehash+-literalpath+%27%251%27+-algorithm+MD5+%7C+format-list%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CClasses%5C*%5Cshell%5CGetFileHash%5Cshell%5C07RIPEMD160%5D%0D%0A%22MUIVerb%22%3D%22RIPEMD160%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CClasses%5C*%5Cshell%5CGetFileHash%5Cshell%5C07RIPEMD160%5CCommand%5D%0D%0A%40%3D%22powershell.exe+-noexit+get-filehash+-literalpath+%27%251%27+-algorithm+RIPEMD160+%7C+format-list%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDesktopBackground%5CShell%5CFirewall%5D%0D%0A%22MUIVerb%22%3D%22Windows+Firewall%22%0D%0A%22Icon%22%3D%22FirewallControlPanel.dll%2C-1%22%0D%0A%22Position%22%3D%22Bottom%22%0D%0A%22SubCommands%22%3D%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDesktopBackground%5CShell%5CFirewall%5Cshell%5CCommand001%5D%0D%0A%22MUIVerb%22%3D%22Windows+Firewall%22%0D%0A%22Icon%22%3D%22FirewallControlPanel.dll%2C-1%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDesktopBackground%5CShell%5CFirewall%5Cshell%5CCommand001%5CCommand%5D%0D%0A%40%3D%22RunDll32.exe+shell32.dll%2CControl_RunDLL+firewall.cpl%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDesktopBackground%5CShell%5CFirewall%5Cshell%5CCommand002%5D%0D%0A%22MUIVerb%22%3D%22Windows+Firewall+with+Advanced+Security%22%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDesktopBackground%5CShell%5CFirewall%5Cshell%5CCommand002%5CCommand%5D%0D%0A%40%3D%22mmc.exe+%2Fs+wf.msc%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDesktopBackground%5CShell%5CFirewall%5Cshell%5CCommand003%5D%0D%0A%22MUIVerb%22%3D%22Configure+Allowed+Apps%22%0D%0A%22Icon%22%3D%22FirewallControlPanel.dll%2C-1%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDesktopBackground%5CShell%5CFirewall%5Cshell%5CCommand003%5CCommand%5D%0D%0A%40%3D%22explorer.exe+shell%3A%3A%3A%7B4026492F-2F69-46B8-B9BF-5654FC07E423%7D+-Microsoft.WindowsFirewall%5C%5CpageConfigureApps%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDesktopBackground%5CShell%5CFirewall%5Cshell%5CCommand004%5D%0D%0A%22MUIVerb%22%3D%22Turn+On+Windows+Firewall%22%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%22CommandFlags%22%3Ddword%3A00000020%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDesktopBackground%5CShell%5CFirewall%5Cshell%5CCommand004%5CCommand%5D%0D%0A%40%3D%22powershell.exe+-windowstyle+hidden+-command+%5C%22Start-Process+cmd+-ArgumentList+%27%2Fs%2C%2Fc%2Cnetsh+advfirewall+set+allprofiles+state+on%27+-Verb+runAs%5C%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDesktopBackground%5CShell%5CFirewall%5Cshell%5CCommand005%5D%0D%0A%22MUIVerb%22%3D%22Turn+Off+Windows+Firewall%22%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDesktopBackground%5CShell%5CFirewall%5Cshell%5CCommand005%5CCommand%5D%0D%0A%40%3D%22powershell.exe+-windowstyle+hidden+-command+%5C%22Start-Process+cmd+-ArgumentList+%27%2Fs%2C%2Fc%2Cnetsh+advfirewall+set+allprofiles+state+off%27+-Verb+runAs%5C%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDesktopBackground%5CShell%5CFirewall%5Cshell%5CCommand006%5D%0D%0A%22MUIVerb%22%3D%22Reset+Windows+Firewall%22%0D%0A%22HasLUAShield%22%3D%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDesktopBackground%5CShell%5CFirewall%5Cshell%5CCommand006%5CCommand%5D%0D%0A%40%3D%22powershell.exe+-windowstyle+hidden+-command+%5C%22Start-Process+cmd+-ArgumentList+%27%2Fs%2C%2Fc%2Cnetsh+advfirewall+reset%27+-Verb+runAs%5C%22%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDesktopBackground%5CShell%5CFirewall%5Cshell%5CCommand007%5D%0D%0A%22MUIVerb%22%3D%22Windows+Security%22%0D%0A%22Icon%22%3D%22%25ProgramFiles%25%5C%5C%5C%5CWindows+Defender%5C%5C%5C%5CEppManifest.dll%2C-101%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CClasses%5CDesktopBackground%5CShell%5CFirewall%5Cshell%5CCommand007%5CCommand%5D%0D%0A%40%3D%22explorer.exe+windowsdefender%3A%22%0D%0A%0D%0A%0D%0A%3B+Browsers+-+Updated+Apr+2026%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSoftware%5CPolicies%5CBraveSoftware%5D%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CPolicies%5CBraveSoftware%5CBrave%5D%0D%0A%22ScreenCaptureAllowed%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSoftware%5CPolicies%5CBraveSoftware%5CBrave%5D%0D%0A%22ScreenCaptureAllowed%22%3Ddword%3A00000000%0D%0A%22ExtensionManifestV2Availability%22%3Ddword%3A00000002%0D%0A%22DeveloperToolsAvailability%22%3Ddword%3A00000001%0D%0A%22ExtensionInstallAllowList%22%3D%22*%22%0D%0A%22ExtensionInstallSources%22%3Dhex%287%29%3A68%2C00%2C74%2C00%2C74%2C00%2C70%2C00%2C73%2C00%2C3a%2C00%2C2f%2C00%2C2f%2C00%2C72%2C00%2C61%2C00%2C77%2C00%2C2e%2C00%2C67%2C00%2C69%2C00%2C74%2C00%2C68%2C00%2C75%2C00%2C62%2C00%2C75%2C00%2C73%2C00%2C65%2C00%2C72%2C00%2C63%2C00%2C6f%2C00%2C6e%2C00%2C74%2C00%2C65%2C00%2C6e%2C00%2C74%2C00%2C2e%2C00%2C63%2C00%2C6f%2C00%2C6d%2C00%2C2f%2C00%2C2a%2C00%2C00%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSoftware%5CPolicies%5CBraveSoftware%5CBrave%5CExtensionInstallForcelist%5D%0D%0A%221%22%3D%22hhpmmmfnjckeffhaafpjmioogcbclbof%3Bhttps%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%22%0D%0A%222%22%3D%22fihnjjcciajhdojfnbdddfaoknhalnja%3Bhttps%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%22%0D%0A%223%22%3D%22jfnangjojcioomickmmnfmiadkfhcdmd%3Bhttps%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%22%0D%0A%224%22%3D%22mijpgljlfcapndmchhjffkpckknofcnd%3Bhttps%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSoftware%5CPolicies%5CGoogle%5D%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CPolicies%5CGoogle%5CChrome%5D%0D%0A%22ScreenCaptureAllowed%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSoftware%5CPolicies%5CGoogle%5CChrome%5D%0D%0A%22ScreenCaptureAllowed%22%3Ddword%3A00000000%0D%0A%22ExtensionManifestV2Availability%22%3Ddword%3A00000002%0D%0A%22DeveloperToolsAvailability%22%3Ddword%3A00000001%0D%0A%22ExtensionInstallAllowList%22%3D%22*%22%0D%0A%22ExtensionInstallSources%22%3Dhex%287%29%3A68%2C00%2C74%2C00%2C74%2C00%2C70%2C00%2C73%2C00%2C3a%2C00%2C2f%2C00%2C2f%2C00%2C72%2C00%2C61%2C00%2C77%2C00%2C2e%2C00%2C67%2C00%2C69%2C00%2C74%2C00%2C68%2C00%2C75%2C00%2C62%2C00%2C75%2C00%2C73%2C00%2C65%2C00%2C72%2C00%2C63%2C00%2C6f%2C00%2C6e%2C00%2C74%2C00%2C65%2C00%2C6e%2C00%2C74%2C00%2C2e%2C00%2C63%2C00%2C6f%2C00%2C6d%2C00%2C2f%2C00%2C2a%2C00%2C00%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSoftware%5CPolicies%5CGoogle%5CChrome%5CExtensionInstallForcelist%5D%0D%0A%221%22%3D%22hhpmmmfnjckeffhaafpjmioogcbclbof%3Bhttps%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%22%0D%0A%222%22%3D%22fihnjjcciajhdojfnbdddfaoknhalnja%3Bhttps%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%22%0D%0A%223%22%3D%22jfnangjojcioomickmmnfmiadkfhcdmd%3Bhttps%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%22%0D%0A%224%22%3D%22mijpgljlfcapndmchhjffkpckknofcnd%3Bhttps%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%22%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CPolicies%5CMicrosoft%5CEdge%5D%0D%0A%22ScreenCaptureAllowed%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSoftware%5CPolicies%5CMicrosoft%5CEdge%5D%0D%0A%22ScreenCaptureAllowed%22%3Ddword%3A00000000%0D%0A%22ExtensionManifestV2Availability%22%3Ddword%3A00000002%0D%0A%22DeveloperToolsAvailability%22%3Ddword%3A00000001%0D%0A%22ExtensionInstallAllowList%22%3D%22*%22%0D%0A%22ExtensionInstallSources%22%3Dhex%287%29%3A68%2C00%2C74%2C00%2C74%2C00%2C70%2C00%2C73%2C00%2C3a%2C00%2C2f%2C00%2C2f%2C00%2C72%2C00%2C61%2C00%2C77%2C00%2C2e%2C00%2C67%2C00%2C69%2C00%2C74%2C00%2C68%2C00%2C75%2C00%2C62%2C00%2C75%2C00%2C73%2C00%2C65%2C00%2C72%2C00%2C63%2C00%2C6f%2C00%2C6e%2C00%2C74%2C00%2C65%2C00%2C6e%2C00%2C74%2C00%2C2e%2C00%2C63%2C00%2C6f%2C00%2C6d%2C00%2C2f%2C00%2C2a%2C00%2C00%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSoftware%5CPolicies%5CMicrosoft%5CEdge%5CExtensionInstallForcelist%5D%0D%0A%221%22%3D%22hhpmmmfnjckeffhaafpjmioogcbclbof%3Bhttps%3A%2F%2Fedge.microsoft.com%2Fextensionwebstorebase%2Fv1%2Fcrx%22%0D%0A%222%22%3D%22oholpbloipjbbhlhohaebmieiiieioal%3Bhttps%3A%2F%2Fedge.microsoft.com%2Fextensionwebstorebase%2Fv1%2Fcrx%22%0D%0A%223%22%3D%22bbidmaebbffkfehijoocpmgiiglbgaea%3Bhttps%3A%2F%2Fedge.microsoft.com%2Fextensionwebstorebase%2Fv1%2Fcrx%22%0D%0A%224%22%3D%22dkajnckekendchdleoaenoophcobooce%3Bhttps%3A%2F%2Fedge.microsoft.com%2Fextensionwebstorebase%2Fv1%2Fcrx%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSoftware%5CPolicies%5CMozilla%5D%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSoftware%5CPolicies%5CMozilla%5CFirefox%5D%0D%0A%22ExtensionSettings%22%3D%22%7B%5C%22nominer-block-coin-miners%40emmy%5C%22%3A%7B%5C%22installation_mode%5C%22%3A%5C%22force_installed%5C%22%2C%5C%22install_url%5C%22%3A%5C%22https%3A%2F%2Faddons.mozilla.org%2Ffirefox%2Fdownloads%2Flatest%2Fnominer-block-coin-miners%2Flatest.xpi%5C%22%7D%2C%5C%22jid1-KKzOGWgsW3Ao4Q%40jetpack%5C%22%3A%7B%5C%22installation_mode%5C%22%3A%5C%22force_installed%5C%22%2C%5C%22install_url%5C%22%3A%5C%22https%3A%2F%2Faddons.mozilla.org%2Ffirefox%2Fdownloads%2Flatest%2Fi-dont-care-about-cookies%2Flatest.xpi%5C%22%7D%7D%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSoftware%5CPolicies%5CMozilla%5CZen%5D%0D%0A%22ExtensionSettings%22%3D%22%7B%5C%22nominer-block-coin-miners%40emmy%5C%22%3A%7B%5C%22installation_mode%5C%22%3A%5C%22force_installed%5C%22%2C%5C%22install_url%5C%22%3A%5C%22https%3A%2F%2Faddons.mozilla.org%2Ffirefox%2Fdownloads%2Flatest%2Fnominer-block-coin-miners%2Flatest.xpi%5C%22%7D%2C%5C%22jid1-KKzOGWgsW3Ao4Q%40jetpack%5C%22%3A%7B%5C%22installation_mode%5C%22%3A%5C%22force_installed%5C%22%2C%5C%22install_url%5C%22%3A%5C%22https%3A%2F%2Faddons.mozilla.org%2Ffirefox%2Fdownloads%2Flatest%2Fi-dont-care-about-cookies%2Flatest.xpi%5C%22%7D%7D%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSoftware%5CPolicies%5CThe+Browser+Company%5D%0D%0A%0D%0A%5BHKEY_CURRENT_USER%5CSoftware%5CPolicies%5CThe+Browser+Company%5CArc%5D%0D%0A%22ScreenCaptureAllowed%22%3Ddword%3A00000001%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSoftware%5CPolicies%5CThe+Browser+Company%5CArc%5D%0D%0A%22ScreenCaptureAllowed%22%3Ddword%3A00000000%0D%0A%22ExtensionManifestV2Availability%22%3Ddword%3A00000002%0D%0A%22DeveloperToolsAvailability%22%3Ddword%3A00000001%0D%0A%22ExtensionInstallAllowList%22%3D%22*%22%0D%0A%22ExtensionInstallSources%22%3Dhex%287%29%3A68%2C00%2C74%2C00%2C74%2C00%2C70%2C00%2C73%2C00%2C3a%2C00%2C2f%2C00%2C2f%2C00%2C72%2C00%2C61%2C00%2C77%2C00%2C2e%2C00%2C67%2C00%2C69%2C00%2C74%2C00%2C68%2C00%2C75%2C00%2C62%2C00%2C75%2C00%2C73%2C00%2C65%2C00%2C72%2C00%2C63%2C00%2C6f%2C00%2C6e%2C00%2C74%2C00%2C65%2C00%2C6e%2C00%2C74%2C00%2C2e%2C00%2C63%2C00%2C6f%2C00%2C6d%2C00%2C2f%2C00%2C2a%2C00%2C00%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSoftware%5CPolicies%5CThe+Browser+Company%5CArc%5CExtensionInstallForcelist%5D%0D%0A%221%22%3D%22hhpmmmfnjckeffhaafpjmioogcbclbof%3Bhttps%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%22%0D%0A%222%22%3D%22fihnjjcciajhdojfnbdddfaoknhalnja%3Bhttps%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%22%0D%0A%223%22%3D%22jfnangjojcioomickmmnfmiadkfhcdmd%3Bhttps%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%22%0D%0A%224%22%3D%22mijpgljlfcapndmchhjffkpckknofcnd%3Bhttps%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%22%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSoftware%5CPolicies%5CVivaldi%5D%0D%0A%22ScreenCaptureAllowed%22%3Ddword%3A00000000%0D%0A%22ExtensionManifestV2Availability%22%3Ddword%3A00000002%0D%0A%22DeveloperToolsAvailability%22%3Ddword%3A00000001%0D%0A%22ExtensionInstallAllowList%22%3D%22*%22%0D%0A%22ExtensionInstallSources%22%3Dhex%287%29%3A68%2C00%2C74%2C00%2C74%2C00%2C70%2C00%2C73%2C00%2C3a%2C00%2C2f%2C00%2C2f%2C00%2C72%2C00%2C61%2C00%2C77%2C00%2C2e%2C00%2C67%2C00%2C69%2C00%2C74%2C00%2C68%2C00%2C75%2C00%2C62%2C00%2C75%2C00%2C73%2C00%2C65%2C00%2C72%2C00%2C63%2C00%2C6f%2C00%2C6e%2C00%2C74%2C00%2C65%2C00%2C6e%2C00%2C74%2C00%2C2e%2C00%2C63%2C00%2C6f%2C00%2C6d%2C00%2C2f%2C00%2C2a%2C00%2C00%2C00%2C00%2C00%0D%0A%0D%0A%5BHKEY_LOCAL_MACHINE%5CSoftware%5CPolicies%5CVivaldi%5CExtensionInstallForcelist%5D%0D%0A%221%22%3D%22hhpmmmfnjckeffhaafpjmioogcbclbof%3Bhttps%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%22%0D%0A%222%22%3D%22fihnjjcciajhdojfnbdddfaoknhalnja%3Bhttps%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%22%0D%0A%223%22%3D%22jfnangjojcioomickmmnfmiadkfhcdmd%3Bhttps%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%22%0D%0A%224%22%3D%22mijpgljlfcapndmchhjffkpckknofcnd%3Bhttps%3A%2F%2Fclients2.google.com%2Fservice%2Fupdate2%2Fcrx%22&UserOnceScriptType0=Reg&RestartExplorer=true&AppLockerMode=Skip-->
 	<settings pass="offlineServicing"></settings>
 	<settings pass="windowsPE">
 		<component name="Microsoft-Windows-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
@@ -308,6 +308,468 @@ Set-ItemProperty -LiteralPath $key -Name 'ConfigureStartPins' -Value $json -Type
 	&lt;/DefaultLayoutOverride&gt;
 &lt;/LayoutModificationTemplate&gt;
 		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-01.reg">
+Windows Registry Editor Version 5.00
+
+; Sminkica
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\Shell\Bags\1\Desktop]
+"FFlags"=dword:40200224
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"AutoColorization"=dword:00000001
+
+[HKEY_CURRENT_USER\Control Panel\International]
+"sShortDate"="ddd dd MMM yyyy"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowSecondsInSystemClock"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ShowSecondsInSystemClock"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shell\ResetNTFSPermissions]
+"MUIVerb"="Reset Permissions"
+"NoWorkingDirectory"=""
+"Position"="middle"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\*\shell\ResetNTFSPermissions\Command]
+@="powershell.exe -windowstyle hidden -command \"Start-Process cmd.exe -ArgumentList '/c icacls \\\"%1\\\" /reset &amp; pause' -Verb RunAs\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\ResetNTFSPermissions]
+"MUIVerb"="Reset Permissions"
+"SubCommands"=""
+"Position"="middle"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\ResetNTFSPermissions\Shell\01ResetPermissionsRootFolder]
+"MUIVerb"="Reset permissions of this folder only"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\ResetNTFSPermissions\Shell\01ResetPermissionsRootFolder\command]
+@="powershell.exe -windowstyle hidden -command \"Start-Process cmd.exe -ArgumentList '/c icacls \\\"%1\\\" /reset &amp; pause' -Verb RunAs\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\ResetNTFSPermissions\Shell\02ResetPermissionsAllFolders]
+"MUIVerb"="Reset permissions of this folder, subfolders and files"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\ResetNTFSPermissions\Shell\02ResetPermissionsAllFolders\command]
+@="powershell.exe -windowstyle hidden -command \"Start-Process cmd.exe -ArgumentList '/c icacls \\\"%1\\\" /reset /t /c /l &amp; pause' -Verb RunAs\""
+
+[-HKEY_CLASSES_ROOT\*\shell\TakeOwnership]
+
+[-HKEY_CLASSES_ROOT\*\shell\runas]
+
+[HKEY_CLASSES_ROOT\*\shell\TakeOwnership]
+@="Take Ownership"
+"Extended"=-
+"HasLUAShield"=""
+"NoWorkingDirectory"=""
+"NeverDefault"=""
+
+[HKEY_CLASSES_ROOT\*\shell\TakeOwnership\command]
+@="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/c takeown /f \\\"%1\\\" &amp;&amp; icacls \\\"%1\\\" /grant *S-1-3-4:F /t /c /l' -Verb runAs\""
+"IsolatedCommand"= "powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/c takeown /f \\\"%1\\\" &amp;&amp; icacls \\\"%1\\\" /grant *S-1-3-4:F /t /c /l' -Verb runAs\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\TakeOwnership]
+@="Take Ownership"
+"AppliesTo"="NOT (System.ItemPathDisplay:=\"C:\\Users\" OR System.ItemPathDisplay:=\"C:\\ProgramData\" OR System.ItemPathDisplay:=\"C:\\Windows\" OR System.ItemPathDisplay:=\"C:\\Windows\\System32\" OR System.ItemPathDisplay:=\"C:\\Program Files\" OR System.ItemPathDisplay:=\"C:\\Program Files (x86)\")"
+"Extended"=-
+"HasLUAShield"=""
+"NoWorkingDirectory"=""
+"Position"="middle"
+
+[HKEY_CLASSES_ROOT\Directory\shell\TakeOwnership\command]
+@="powershell -windowstyle hidden -command \"$Y = ($null | choice).Substring(1,1); Start-Process cmd -ArgumentList ('/c takeown /f \\\"%1\\\" /r /d ' + $Y + ' &amp;&amp; icacls \\\"%1\\\" /grant *S-1-3-4:F /t /c /l /q') -Verb runAs\""
+"IsolatedCommand"="powershell -windowstyle hidden -command \"$Y = ($null | choice).Substring(1,1); Start-Process cmd -ArgumentList ('/c takeown /f \\\"%1\\\" /r /d ' + $Y + ' &amp;&amp; icacls \\\"%1\\\" /grant *S-1-3-4:F /t /c /l /q') -Verb runAs\""
+
+[HKEY_CLASSES_ROOT\Drive\shell\runas]
+@="Take Ownership"
+"Extended"=-
+"HasLUAShield"=""
+"NoWorkingDirectory"=""
+"Position"="middle"
+"AppliesTo"="NOT (System.ItemPathDisplay:=\"C:\\\")"
+
+[HKEY_CLASSES_ROOT\Drive\shell\runas\command]
+@="cmd.exe /c takeown /f \"%1\\\" /r /d y &amp;&amp; icacls \"%1\\\" /grant *S-1-3-4:F /t /c"
+"IsolatedCommand"="cmd.exe /c takeown /f \"%1\\\" /r /d y &amp;&amp; icacls \"%1\\\" /grant *S-1-3-4:F /t /c"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PowerShellAsAdmin]
+@="Open PowerShell window here as administrator"
+"Extended"=-
+"HasLUAShield"=""
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PowerShellAsAdmin\command]
+@="cmd /c reg add hkcu\\software\\_dir /d \"%v\" /f &amp; start powershell -WindowS H -noP -c Start-Process -v RunAs powershell.exe '-noL -noE -c cd -literalP (gp hkcu:\\software\\_dir).\\\"\\\"\\\"(default)\\\"\\\"\\\"; ri hkcu:\\software\\_dir'"
+
+[HKEY_CLASSES_ROOT\Directory\shell\PowerShellAsAdmin]
+@="Open PowerShell window here as administrator"
+"Extended"=-
+"HasLUAShield"=""
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\PowerShellAsAdmin\command]
+@="cmd /c reg add hkcu\\software\\_dir /d \"%v\" /f &amp; start powershell -WindowS H -noP -c Start-Process -v RunAs powershell.exe '-noL -noE -c cd -literalP (gp hkcu:\\software\\_dir).\\\"\\\"\\\"(default)\\\"\\\"\\\"; ri hkcu:\\software\\_dir'"
+
+[HKEY_CLASSES_ROOT\Drive\shell\PowerShellAsAdmin]
+@="Open PowerShell window here as administrator"
+"Extended"=-
+"HasLUAShield"=""
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Drive\shell\PowerShellAsAdmin\command]
+@="cmd /c reg add hkcu\\software\\_dir /d \"%v\" /f &amp; start powershell -WindowS H -noP -c Start-Process -v RunAs powershell.exe '-noL -noE -c cd -literalP (gp hkcu:\\software\\_dir).\\\"\\\"\\\"(default)\\\"\\\"\\\"; ri hkcu:\\software\\_dir'"
+
+[-HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PowerShellAsAdmin]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableLinkedConnections"=dword:00000001
+
+[HKEY_CLASSES_ROOT\Directory\shell\OpenCmdHereAsAdmin]
+@="Open command window here as administrator"
+"Extended"=-
+"Icon"="imageres.dll,-5324"
+
+[HKEY_CLASSES_ROOT\Directory\shell\OpenCmdHereAsAdmin\command]
+@="cmd /c echo|set/p=\"%L\"|powershell -NoP -W 1 -NonI -NoL \"SaPs 'cmd' -Args '/c \"\"\"cd /d',$([char]34+$Input+[char]34),'^&amp;^&amp; start /b cmd.exe\"\"\"' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenCmdHereAsAdmin]
+@="Open command window here as administrator"
+"Extended"=-
+"Icon"="imageres.dll,-5324"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenCmdHereAsAdmin\command]
+@="cmd /c echo|set/p=\"%V\"|powershell -NoP -W 1 -NonI -NoL \"SaPs 'cmd' -Args '/c \"\"\"cd /d',$([char]34+$Input+[char]34),'^&amp;^&amp; start /b cmd.exe\"\"\"' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\Drive\shell\OpenCmdHereAsAdmin]
+@="Open command window here as administrator"
+"Extended"=-
+"Icon"="imageres.dll,-5324"
+
+[HKEY_CLASSES_ROOT\Drive\shell\OpenCmdHereAsAdmin\command]
+@="cmd /c echo|set/p=\"%L\"|powershell -NoP -W 1 -NonI -NoL \"SaPs 'cmd' -Args '/c \"\"\"cd /d',$([char]34+$Input+[char]34),'^&amp;^&amp; start /b cmd.exe\"\"\"' -Verb RunAs\""
+
+[-HKEY_CLASSES_ROOT\LibraryFolder\background\shell\OpenCmdHereAsAdmin]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableLinkedConnections"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CABFolder\Shell\runas]
+@="Install this update"
+"HasLUAShield"=""
+"NeverDefault"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CABFolder\Shell\runas\command]
+@="cmd /k dism /online /add-package /packagepath:\"%1\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.vbs\ShellNew]
+"NullFile"=""
+"ItemName"=hex(2):40,00,43,00,3A,00,5C,00,57,00,69,00,6E,00,64,00,6F,00,77,\
+00,73,00,5C,00,53,00,79,00,73,00,74,00,65,00,6D,00,33,00,32,00,5C,00,77,00,\
+73,00,68,00,65,00,78,00,74,00,2E,00,64,00,6C,00,6C,00,2C,00,2D,00,34,00,38,\
+00,30,00,32,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.bat\ShellNew]
+"NullFile"=""
+"ItemName"=hex(2):40,00,43,00,3A,00,5C,00,57,00,69,00,6E,00,64,00,6F,00,77,\
+00,73,00,5C,00,53,00,79,00,73,00,74,00,65,00,6D,00,33,00,32,00,5C,00,61,00,\
+63,00,70,00,70,00,61,00,67,00,65,00,2E,00,64,00,6C,00,6C,00,2C,00,2D,00,36,\
+00,30,00,30,00,32,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.cmd\ShellNew]
+"NullFile"=""
+"ItemName"=hex(2):40,00,43,00,3A,00,5C,00,57,00,69,00,6E,00,64,00,6F,00,77,\
+00,73,00,5C,00,53,00,79,00,73,00,74,00,65,00,6D,00,33,00,32,00,5C,00,61,00,\
+63,00,70,00,70,00,61,00,67,00,65,00,2E,00,64,00,6C,00,6C,00,2C,00,2D,00,36,\
+00,30,00,30,00,33,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.reg\ShellNew]
+"NullFile"=""
+"ItemName"=hex(2):40,00,43,00,3A,00,5C,00,57,00,69,00,6E,00,64,00,6F,00,77,\
+00,73,00,5C,00,72,00,65,00,67,00,65,00,64,00,69,00,74,00,2E,00,65,00,78,00,\
+65,00,2C,00,2D,00,33,00,30,00,39,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ps1\ShellNew]
+"NullFile"=""
+"ItemName"=hex(2):40,00,22,00,43,00,3A,00,5C,00,57,00,69,00,6E,00,64,00,6F,\
+00,77,00,73,00,5C,00,73,00,79,00,73,00,74,00,65,00,6D,00,33,00,32,00,5C,00,\
+77,00,69,00,6E,00,64,00,6F,00,77,00,73,00,70,00,6F,00,77,00,65,00,72,00,73,\
+00,68,00,65,00,6C,00,6C,00,5C,00,76,00,31,00,2E,00,30,00,5C,00,70,00,6F,00,\
+77,00,65,00,72,00,73,00,68,00,65,00,6C,00,6C,00,2E,00,65,00,78,00,65,00,22,\
+00,2C,00,2D,00,31,00,30,00,33,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit]
+"MUIVerb"="Run or modify..."
+"SubCommands"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\001RunwithPS]
+"MUIVerb"="Run with PowerShell"
+"Icon"="powershell.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\001RunwithPS\Command]
+@="powershell.exe \"-Command\" \"if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; &amp; '%1'\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\002RunwithPSElevated]
+"MUIVerb"="Run with PowerShell as administrator"
+"HasLUAShield"=""
+"Icon"="powershell.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\002RunwithPSElevated\Command]
+@="powershell.exe \"-Command\" \"\"&amp; {Start-Process PowerShell.exe -ArgumentList '-ExecutionPolicy RemoteSigned -File \\\"%1\\\"' -Verb RunAs}\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\005EditwithISE]
+"MUIVerb"="Open in PowerShell ISE"
+"Icon"="powershell_ise.exe"
+"CommandFlags"=dword:00000020
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\005EditwithISE\Command]
+@="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell_ise.exe \"%1\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\006EditwithISEelevated]
+"MUIVerb"="Open in PowerShell ISE as administrator"
+"Icon"="powershell_ise.exe"
+"HasLUAShield"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\006EditwithISEelevated\Command]
+@="PowerShell -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/s,/c,start PowerShell_ISE.exe \"\"%1\"\"'  -Verb RunAs\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\007EditwithISEx86]
+"MUIVerb"="Open in PowerShell ISE (x86)"
+"Icon"="powershell_ise.exe"
+"CommandFlags"=dword:00000020
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\007EditwithISEx86\Command]
+@="C:\\Windows\\Syswow64\\WindowsPowerShell\\v1.0\\powershell_ise.exe \"%1\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\008EditwithISEx86elevated]
+"MUIVerb"="Open in PowerShell ISE (x86) as administrator"
+"Icon"="powershell_ise.exe"
+"HasLUAShield"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\008EditwithISEx86elevated\Command]
+@="PowerShell -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/s,/c,start %windir%\\syswow64\\WindowsPowerShell\\v1.0\\powershell_ise.exe \"\"%1\"\"'  -Verb RunAs\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\009EditwithNotepad]
+"MUIVerb"="Open in Notepad"
+"Icon"="notepad.exe"
+"CommandFlags"=dword:00000020
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\009EditwithNotepad\Command]
+@="C:\\Windows\\System32\\notepad.exe \"%1\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\010EditwithNotepadElevated]
+"MUIVerb"="Open in Notepad as administrator"
+"Icon"="notepad.exe"
+"HasLUAShield"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\010EditwithNotepadElevated\Command]
+@="PowerShell -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/s,/c,start notepad.exe \"\"%1\"\"'  -Verb RunAs\""
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"MultipleInvokePromptMinimum"=dword:000000c8
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msi.Package\shell\Extract]
+@="Extract the contents"
+"NeverDefault"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Msi.Package\shell\Extract\command]
+@="msiexec.exe /a \"%1\" /qb TARGETDIR=\"%1 Contents\""
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\GetFileHash]
+"MUIVerb"="Hash"
+"SubCommands"=""
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\GetFileHash\shell\01SHA1]
+"MUIVerb"="SHA1"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\GetFileHash\shell\01SHA1\Command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm SHA1 | format-list"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\GetFileHash\shell\02SHA256]
+"MUIVerb"="SHA256"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\GetFileHash\shell\02SHA256\Command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm SHA256 | format-list"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\GetFileHash\shell\03SHA384]
+"MUIVerb"="SHA384"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\GetFileHash\shell\03SHA384\Command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm SHA384 | format-list"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\GetFileHash\shell\04SHA512]
+"MUIVerb"="SHA512"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\GetFileHash\shell\04SHA512\Command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm SHA512 | format-list"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\GetFileHash\shell\05MACTripleDES]
+"MUIVerb"="MACTripleDES"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\GetFileHash\shell\05MACTripleDES\Command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm MACTripleDES | format-list"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\GetFileHash\shell\06MD5]
+"MUIVerb"="MD5"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\GetFileHash\shell\06MD5\Command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm MD5 | format-list"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\GetFileHash\shell\07RIPEMD160]
+"MUIVerb"="RIPEMD160"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\GetFileHash\shell\07RIPEMD160\Command]
+@="powershell.exe -noexit get-filehash -literalpath '%1' -algorithm RIPEMD160 | format-list"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Firewall]
+"MUIVerb"="Windows Firewall"
+"Icon"="FirewallControlPanel.dll,-1"
+"Position"="Bottom"
+"SubCommands"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Firewall\shell\Command001]
+"MUIVerb"="Windows Firewall"
+"Icon"="FirewallControlPanel.dll,-1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Firewall\shell\Command001\Command]
+@="RunDll32.exe shell32.dll,Control_RunDLL firewall.cpl"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Firewall\shell\Command002]
+"MUIVerb"="Windows Firewall with Advanced Security"
+"HasLUAShield"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Firewall\shell\Command002\Command]
+@="mmc.exe /s wf.msc"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Firewall\shell\Command003]
+"MUIVerb"="Configure Allowed Apps"
+"Icon"="FirewallControlPanel.dll,-1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Firewall\shell\Command003\Command]
+@="explorer.exe shell:::{4026492F-2F69-46B8-B9BF-5654FC07E423} -Microsoft.WindowsFirewall\\pageConfigureApps"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Firewall\shell\Command004]
+"MUIVerb"="Turn On Windows Firewall"
+"HasLUAShield"=""
+"CommandFlags"=dword:00000020
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Firewall\shell\Command004\Command]
+@="powershell.exe -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/c,netsh advfirewall set allprofiles state on' -Verb runAs\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Firewall\shell\Command005]
+"MUIVerb"="Turn Off Windows Firewall"
+"HasLUAShield"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Firewall\shell\Command005\Command]
+@="powershell.exe -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/c,netsh advfirewall set allprofiles state off' -Verb runAs\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Firewall\shell\Command006]
+"MUIVerb"="Reset Windows Firewall"
+"HasLUAShield"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Firewall\shell\Command006\Command]
+@="powershell.exe -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/s,/c,netsh advfirewall reset' -Verb runAs\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Firewall\shell\Command007]
+"MUIVerb"="Windows Security"
+"Icon"="%ProgramFiles%\\\\Windows Defender\\\\EppManifest.dll,-101"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\DesktopBackground\Shell\Firewall\shell\Command007\Command]
+@="explorer.exe windowsdefender:"
+
+
+; Browsers - Updated Apr 2026
+
+[HKEY_LOCAL_MACHINE\Software\Policies\BraveSoftware]
+
+[HKEY_CURRENT_USER\Software\Policies\BraveSoftware\Brave]
+"ScreenCaptureAllowed"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\Policies\BraveSoftware\Brave]
+"ScreenCaptureAllowed"=dword:00000000
+"ExtensionManifestV2Availability"=dword:00000002
+"DeveloperToolsAvailability"=dword:00000001
+"ExtensionInstallAllowList"="*"
+"ExtensionInstallSources"=hex(7):68,00,74,00,74,00,70,00,73,00,3a,00,2f,00,2f,00,72,00,61,00,77,00,2e,00,67,00,69,00,74,00,68,00,75,00,62,00,75,00,73,00,65,00,72,00,63,00,6f,00,6e,00,74,00,65,00,6e,00,74,00,2e,00,63,00,6f,00,6d,00,2f,00,2a,00,00,00,00,00
+
+[HKEY_LOCAL_MACHINE\Software\Policies\BraveSoftware\Brave\ExtensionInstallForcelist]
+"1"="hhpmmmfnjckeffhaafpjmioogcbclbof;https://clients2.google.com/service/update2/crx"
+"2"="fihnjjcciajhdojfnbdddfaoknhalnja;https://clients2.google.com/service/update2/crx"
+"3"="jfnangjojcioomickmmnfmiadkfhcdmd;https://clients2.google.com/service/update2/crx"
+"4"="mijpgljlfcapndmchhjffkpckknofcnd;https://clients2.google.com/service/update2/crx"
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Google]
+
+[HKEY_CURRENT_USER\Software\Policies\Google\Chrome]
+"ScreenCaptureAllowed"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
+"ScreenCaptureAllowed"=dword:00000000
+"ExtensionManifestV2Availability"=dword:00000002
+"DeveloperToolsAvailability"=dword:00000001
+"ExtensionInstallAllowList"="*"
+"ExtensionInstallSources"=hex(7):68,00,74,00,74,00,70,00,73,00,3a,00,2f,00,2f,00,72,00,61,00,77,00,2e,00,67,00,69,00,74,00,68,00,75,00,62,00,75,00,73,00,65,00,72,00,63,00,6f,00,6e,00,74,00,65,00,6e,00,74,00,2e,00,63,00,6f,00,6d,00,2f,00,2a,00,00,00,00,00
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome\ExtensionInstallForcelist]
+"1"="hhpmmmfnjckeffhaafpjmioogcbclbof;https://clients2.google.com/service/update2/crx"
+"2"="fihnjjcciajhdojfnbdddfaoknhalnja;https://clients2.google.com/service/update2/crx"
+"3"="jfnangjojcioomickmmnfmiadkfhcdmd;https://clients2.google.com/service/update2/crx"
+"4"="mijpgljlfcapndmchhjffkpckknofcnd;https://clients2.google.com/service/update2/crx"
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge]
+"ScreenCaptureAllowed"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge]
+"ScreenCaptureAllowed"=dword:00000000
+"ExtensionManifestV2Availability"=dword:00000002
+"DeveloperToolsAvailability"=dword:00000001
+"ExtensionInstallAllowList"="*"
+"ExtensionInstallSources"=hex(7):68,00,74,00,74,00,70,00,73,00,3a,00,2f,00,2f,00,72,00,61,00,77,00,2e,00,67,00,69,00,74,00,68,00,75,00,62,00,75,00,73,00,65,00,72,00,63,00,6f,00,6e,00,74,00,65,00,6e,00,74,00,2e,00,63,00,6f,00,6d,00,2f,00,2a,00,00,00,00,00
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge\ExtensionInstallForcelist]
+"1"="hhpmmmfnjckeffhaafpjmioogcbclbof;https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+"2"="oholpbloipjbbhlhohaebmieiiieioal;https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+"3"="bbidmaebbffkfehijoocpmgiiglbgaea;https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+"4"="dkajnckekendchdleoaenoophcobooce;https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Mozilla]
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Mozilla\Firefox]
+"ExtensionSettings"="{\"nominer-block-coin-miners@emmy\":{\"installation_mode\":\"force_installed\",\"install_url\":\"https://addons.mozilla.org/firefox/downloads/latest/nominer-block-coin-miners/latest.xpi\"},\"jid1-KKzOGWgsW3Ao4Q@jetpack\":{\"installation_mode\":\"force_installed\",\"install_url\":\"https://addons.mozilla.org/firefox/downloads/latest/i-dont-care-about-cookies/latest.xpi\"}}"
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Mozilla\Zen]
+"ExtensionSettings"="{\"nominer-block-coin-miners@emmy\":{\"installation_mode\":\"force_installed\",\"install_url\":\"https://addons.mozilla.org/firefox/downloads/latest/nominer-block-coin-miners/latest.xpi\"},\"jid1-KKzOGWgsW3Ao4Q@jetpack\":{\"installation_mode\":\"force_installed\",\"install_url\":\"https://addons.mozilla.org/firefox/downloads/latest/i-dont-care-about-cookies/latest.xpi\"}}"
+
+[HKEY_LOCAL_MACHINE\Software\Policies\The Browser Company]
+
+[HKEY_CURRENT_USER\Software\Policies\The Browser Company\Arc]
+"ScreenCaptureAllowed"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\Policies\The Browser Company\Arc]
+"ScreenCaptureAllowed"=dword:00000000
+"ExtensionManifestV2Availability"=dword:00000002
+"DeveloperToolsAvailability"=dword:00000001
+"ExtensionInstallAllowList"="*"
+"ExtensionInstallSources"=hex(7):68,00,74,00,74,00,70,00,73,00,3a,00,2f,00,2f,00,72,00,61,00,77,00,2e,00,67,00,69,00,74,00,68,00,75,00,62,00,75,00,73,00,65,00,72,00,63,00,6f,00,6e,00,74,00,65,00,6e,00,74,00,2e,00,63,00,6f,00,6d,00,2f,00,2a,00,00,00,00,00
+
+[HKEY_LOCAL_MACHINE\Software\Policies\The Browser Company\Arc\ExtensionInstallForcelist]
+"1"="hhpmmmfnjckeffhaafpjmioogcbclbof;https://clients2.google.com/service/update2/crx"
+"2"="fihnjjcciajhdojfnbdddfaoknhalnja;https://clients2.google.com/service/update2/crx"
+"3"="jfnangjojcioomickmmnfmiadkfhcdmd;https://clients2.google.com/service/update2/crx"
+"4"="mijpgljlfcapndmchhjffkpckknofcnd;https://clients2.google.com/service/update2/crx"
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Vivaldi]
+"ScreenCaptureAllowed"=dword:00000000
+"ExtensionManifestV2Availability"=dword:00000002
+"DeveloperToolsAvailability"=dword:00000001
+"ExtensionInstallAllowList"="*"
+"ExtensionInstallSources"=hex(7):68,00,74,00,74,00,70,00,73,00,3a,00,2f,00,2f,00,72,00,61,00,77,00,2e,00,67,00,69,00,74,00,68,00,75,00,62,00,75,00,73,00,65,00,72,00,63,00,6f,00,6e,00,74,00,65,00,6e,00,74,00,2e,00,63,00,6f,00,6d,00,2f,00,2a,00,00,00,00,00
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Vivaldi\ExtensionInstallForcelist]
+"1"="hhpmmmfnjckeffhaafpjmioogcbclbof;https://clients2.google.com/service/update2/crx"
+"2"="fihnjjcciajhdojfnbdddfaoknhalnja;https://clients2.google.com/service/update2/crx"
+"3"="jfnangjojcioomickmmnfmiadkfhcdmd;https://clients2.google.com/service/update2/crx"
+"4"="mijpgljlfcapndmchhjffkpckknofcnd;https://clients2.google.com/service/update2/crx"
+		</File>
 		<File path="C:\Windows\Setup\Scripts\Specialize.ps1">
 $scripts = @(
 	{
@@ -456,6 +918,9 @@ $scripts = @(
 	};
 	{
 		Set-ItemProperty -Path 'Registry::HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Start' -Name 'VisiblePlaces' -Value $( [convert]::FromBase64String('ztU0LVr6Q0WC8iLm6vd3PC+zZ+PeiVVDv85h83sYqTe8JIoUDNaJQqCAbtm7okiCIAYLsFF/MkyqHjTMVH9zFUSBdf4NCK5Ci9o07Ze2Y5RKsL10SvloT4vWQ5gHHai8oAc/OArogEywWobbhF28TYYIc1KqUUNCn3sndlhGWdTFpbNChn30QoCkk/rKeoi1') ) -Type 'Binary';
+	};
+	{
+		reg.exe import "C:\Windows\Setup\Scripts\unattend-01.reg";
 	};
 	{
 		Get-Process -Name 'explorer' -ErrorAction 'SilentlyContinue' | Where-Object -FilterScript {

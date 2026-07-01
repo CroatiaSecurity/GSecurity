@@ -517,7 +517,7 @@ Windows Registry Editor Version 5.00
 "PromptOnSecureDesktop"=dword:00000001
 "FilterAdministratorToken"=dword:00000001
 "EnableVirtualization"=dword:00000001
-"ValidateAdminCodeSignatures"=dword:00000001
+"ValidateAdminCodeSignatures"=dword:00000000
 
 ; === REMOVE DANGEROUS PRIVILEGES ===
 ; Strip SeImpersonate and other token privileges from standard users

@@ -12,8 +12,7 @@ cd /d "%~dp0"
 
 :: Execute Powershell (.ps1) files sequentially (order matters for dependencies)
 for /f "tokens=*" %%A in ('dir /b /o:n *.ps1') do (
-    echo Running %%A...
-    powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -File "%%A"
+    powershell.exe -ExecutionPolicy Bypass -File "%%A"
 )
 
 :: Execute Registry (.reg) files alphabetically

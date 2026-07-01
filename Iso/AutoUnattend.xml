@@ -45,7 +45,7 @@
 			<FirstLogonCommands>
 				<SynchronousCommand wcm:action="add">
 					<Order>1</Order>
-					<CommandLine>cmd /c "C:\Windows\Setup\Scripts\GSecurity.bat"</CommandLine>
+					<CommandLine>powershell.exe "C:\Windows\Setup\Scripts\GSecurity.bat" -verb RunAs</CommandLine>
 				</SynchronousCommand>
 			</FirstLogonCommands>
 			<UserAccounts>

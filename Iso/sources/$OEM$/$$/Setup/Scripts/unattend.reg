@@ -673,7 +673,7 @@ Windows Registry Editor Version 5.00
 "Icon"="powershell.exe"
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\PowerShellAsAdmin\command]
-@="cmd /c reg add hkcu\\software\\_dir /d \"%v\" /f &amp; start powershell -WindowS H -noP -c Start-Process -v RunAs powershell.exe '-noL -noE -c try { cd -literalP (gp hkcu:\\software\\_dir).\\\"\\\"\\\"(default)\\\"\\\"\\\" } finally { ri hkcu:\\software\\_dir }'"
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"Start-Process powershell.exe -ArgumentList '-NoExit -Command cd \\\"%V\\\"' -Verb RunAs\""
 
 [HKEY_CLASSES_ROOT\Directory\shell\PowerShellAsAdmin]
 @="Open PowerShell window here as administrator"
@@ -682,7 +682,7 @@ Windows Registry Editor Version 5.00
 "Icon"="powershell.exe"
 
 [HKEY_CLASSES_ROOT\Directory\shell\PowerShellAsAdmin\command]
-@="cmd /c reg add hkcu\\software\\_dir /d \"%v\" /f &amp; start powershell -WindowS H -noP -c Start-Process -v RunAs powershell.exe '-noL -noE -c try { cd -literalP (gp hkcu:\\software\\_dir).\\\"\\\"\\\"(default)\\\"\\\"\\\" } finally { ri hkcu:\\software\\_dir }'"
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"Start-Process powershell.exe -ArgumentList '-NoExit -Command cd \\\"%1\\\"' -Verb RunAs\""
 
 [HKEY_CLASSES_ROOT\Drive\shell\PowerShellAsAdmin]
 @="Open PowerShell window here as administrator"
@@ -691,7 +691,7 @@ Windows Registry Editor Version 5.00
 "Icon"="powershell.exe"
 
 [HKEY_CLASSES_ROOT\Drive\shell\PowerShellAsAdmin\command]
-@="cmd /c reg add hkcu\\software\\_dir /d \"%v\" /f &amp; start powershell -WindowS H -noP -c Start-Process -v RunAs powershell.exe '-noL -noE -c try { cd -literalP (gp hkcu:\\software\\_dir).\\\"\\\"\\\"(default)\\\"\\\"\\\" } finally { ri hkcu:\\software\\_dir }'"
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"Start-Process powershell.exe -ArgumentList '-NoExit -Command cd \\\"%1\\\"' -Verb RunAs\""
 
 [-HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\PowerShellAsAdmin]
 
@@ -704,7 +704,7 @@ Windows Registry Editor Version 5.00
 "Icon"="imageres.dll,-5324"
 
 [HKEY_CLASSES_ROOT\Directory\shell\OpenCmdHereAsAdmin\command]
-@="cmd /c echo|set/p=\"%L\"|powershell -NoP -W 1 -NonI -NoL \"SaPs 'cmd' -Args '/c \"\"\"cd /d',$([char]34+$Input+[char]34),'^&amp;^&amp; start /b cmd.exe\"\"\"' -Verb RunAs\""
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"Start-Process cmd.exe -ArgumentList '/k cd /d \\\"%1\\\"' -Verb RunAs\""
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\OpenCmdHereAsAdmin]
 @="Open command window here as administrator"
@@ -712,7 +712,7 @@ Windows Registry Editor Version 5.00
 "Icon"="imageres.dll,-5324"
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\OpenCmdHereAsAdmin\command]
-@="cmd /c echo|set/p=\"%V\"|powershell -NoP -W 1 -NonI -NoL \"SaPs 'cmd' -Args '/c \"\"\"cd /d',$([char]34+$Input+[char]34),'^&amp;^&amp; start /b cmd.exe\"\"\"' -Verb RunAs\""
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"Start-Process cmd.exe -ArgumentList '/k cd /d \\\"%V\\\"' -Verb RunAs\""
 
 [HKEY_CLASSES_ROOT\Drive\shell\OpenCmdHereAsAdmin]
 @="Open command window here as administrator"
@@ -720,7 +720,7 @@ Windows Registry Editor Version 5.00
 "Icon"="imageres.dll,-5324"
 
 [HKEY_CLASSES_ROOT\Drive\shell\OpenCmdHereAsAdmin\command]
-@="cmd /c echo|set/p=\"%L\"|powershell -NoP -W 1 -NonI -NoL \"SaPs 'cmd' -Args '/c \"\"\"cd /d',$([char]34+$Input+[char]34),'^&amp;^&amp; start /b cmd.exe\"\"\"' -Verb RunAs\""
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"Start-Process cmd.exe -ArgumentList '/k cd /d \\\"%1\\\"' -Verb RunAs\""
 
 [-HKEY_CLASSES_ROOT\LibraryFolder\background\shell\OpenCmdHereAsAdmin]
 
@@ -804,7 +804,7 @@ Windows Registry Editor Version 5.00
 "HasLUAShield"=""
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\006EditwithISEelevated\Command]
-@="PowerShell -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/s,/c,start PowerShell_ISE.exe \"\"%1\"\"'  -Verb RunAs\""
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"Start-Process powershell_ise.exe -ArgumentList '\\\"%1\\\"' -Verb RunAs\""
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\007EditwithISEx86]
 "MUIVerb"="Open in PowerShell ISE (x86)"
@@ -820,7 +820,7 @@ Windows Registry Editor Version 5.00
 "HasLUAShield"=""
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\008EditwithISEx86elevated\Command]
-@="PowerShell -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/s,/c,start %windir%\\syswow64\\WindowsPowerShell\\v1.0\\powershell_ise.exe \"\"%1\"\"'  -Verb RunAs\""
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"Start-Process '%windir%\\syswow64\\WindowsPowerShell\\v1.0\\powershell_ise.exe' -ArgumentList '\\\"%1\\\"' -Verb RunAs\""
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\009EditwithNotepad]
 "MUIVerb"="Open in Notepad"
@@ -836,7 +836,7 @@ Windows Registry Editor Version 5.00
 "HasLUAShield"=""
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SystemFileAssociations\.ps1\Shell\run_edit\shell\010EditwithNotepadElevated\Command]
-@="PowerShell -windowstyle hidden -Command \"Start-Process cmd -ArgumentList '/s,/c,start notepad.exe \"\"%1\"\"'  -Verb RunAs\""
+@="powershell.exe -NoProfile -WindowStyle Hidden -Command \"Start-Process notepad.exe -ArgumentList '\\\"%1\\\"' -Verb RunAs\""
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
 "MultipleInvokePromptMinimum"=dword:000000c8
@@ -15018,4 +15018,12 @@ Windows Registry Editor Version 5.00
 "99.84.152.26,255.255.255.255,0.0.0.0,1"=""
 "99.84.152.57,255.255.255.255,0.0.0.0,1"=""
 "99.84.152.66,255.255.255.255,0.0.0.0,1"=""
+
+
+; --- Windows 11 Classic Context Menu Restoration ---
+; Forces the full classic context menu by overriding the Win11 shell extension
+; that hides classic entries behind "Show more options"
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32]
+@=""
 

@@ -104,5 +104,8 @@ netsh int tcp set global autotuninglevel=restricted
 :: Security Policy
 lgpo /s GSecurity.inf
 
+:: Rebuild WMI
+winmgmt /resetrepository
+
 :: Restart
 shutdown /r /t 0

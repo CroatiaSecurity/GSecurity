@@ -6,7 +6,7 @@
 			<PersistAllDeviceInstalls>false</PersistAllDeviceInstalls>
 		</component>
 	</settings>
-	<settings pass="oobeSystem" wasPassProcessed="true">
+	<settings pass="oobeSystem">
 		<component name="Microsoft-Windows-Deployment" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			<Reseal>
 				<Mode>OOBE</Mode>
@@ -35,26 +35,34 @@
 					<LocalAccount wcm:action="add">
 						<Group>Administrators</Group>
 						<Name>Admin</Name>
-						<Password></Password>
+						<Password>
+							<Value></Value>
+							<PlainText>true</PlainText>
+						</Password>
 					</LocalAccount>
 				</LocalAccounts>
 			</UserAccounts>
 		</component>
 	</settings>
-	<settings pass="specialize" wasPassProcessed="true">
+	<settings pass="specialize">
 		<component name="Microsoft-Windows-Security-SPP-UX" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			<SkipAutoActivation>false</SkipAutoActivation>
 		</component>
 		<component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			<ComputerName>WINDOWS-PC</ComputerName>
 		</component>
-		<component name="Microsoft-Windows-UnattendedJoin" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-		      <Identification>
-		        <JoinWorkgroup></JoinWorkgroup>
-		      </Identification>
-		</component>
 	</settings>
-	<settings pass="windowsPE" wasPassProcessed="true">
+	<settings pass="windowsPE">
+		<component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<InputLocale>041a:0000041a</InputLocale>
+			<SystemLocale>hr-HR</SystemLocale>
+			<UILanguage>en-US</UILanguage>
+			<UILanguageFallback>en-US</UILanguageFallback>
+			<UserLocale>hr-HR</UserLocale>
+			<SetupUILanguage>
+				<UILanguage>en-US</UILanguage>
+			</SetupUILanguage>
+		</component>
 		<component name="Microsoft-Windows-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			<Diagnostics>
 				<OptIn>false</OptIn>
@@ -70,7 +78,9 @@
 			</ImageInstall>
 			<UserData>
 				<AcceptEula>true</AcceptEula>
-				<ProductKey>[KEY]</ProductKey>
+				<ProductKey>
+					<Key>[KEY]</Key>
+				</ProductKey>
 			</UserData>
 		</component>
 	</settings>

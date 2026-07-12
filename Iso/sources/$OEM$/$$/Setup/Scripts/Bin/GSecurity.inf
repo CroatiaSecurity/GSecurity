@@ -1,0 +1,304 @@
+[Unicode]
+Unicode=yes
+
+[Version]
+signature="$CHICAGO$"
+Revision=1
+
+; ============================================================
+; ASD (Australian Signals Directorate) Windows 11 Workstation
+; Hardening Security Policy
+; Source: https://www.cyber.gov.au/business-government/protecting-devices-systems/hardening-systems-applications/system-hardening/hardening-microsoft-windows-11-workstations
+; ============================================================
+
+; ------------------------------------------------------------
+; ACCOUNT POLICIES - Password Policy
+; ------------------------------------------------------------
+[System Access]
+; Maximum password age - 0 = never expires (MFA environment)
+MaximumPasswordAge = 0
+; Minimum password length
+MinimumPasswordLength = 15
+; Password complexity - Disabled (length-based policy)
+PasswordComplexity = 0
+; Do not store LAN Manager hash
+ClearTextPassword = 0
+; Reversible encryption disabled
+RequireLogonToChangePassword = 0
+
+; ------------------------------------------------------------
+; ACCOUNT POLICIES - Account Lockout Policy
+; ------------------------------------------------------------
+LockoutBadCount = 5
+LockoutDuration = 0
+ResetLockoutCount = 15
+
+; ------------------------------------------------------------
+; LOCAL POLICIES - Security Options
+; ------------------------------------------------------------
+[Registry Values]
+
+; --- Accounts ---
+; Accounts: Administrator account status - Enabled
+MACHINE\System\CurrentControlSet\Control\Lsa\LimitBlankPasswordUse=4,1
+; Accounts: Guest account status - Disabled (set via [System Access] GuestAccountStatus)
+; Accounts: Limit local account use of blank passwords to console logon only
+MACHINE\System\CurrentControlSet\Control\Lsa\LimitBlankPasswordUse=4,1
+
+; --- Audit ---
+; Audit: Force audit policy subcategory settings to override audit policy category settings
+MACHINE\System\CurrentControlSet\Control\Lsa\SCENoApplyLegacyAuditPolicy=4,1
+
+; --- Domain Member ---
+; Domain member: Digitally encrypt or sign secure channel data (always)
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\RequireSignOrSeal=4,1
+; Domain member: Digitally encrypt secure channel data (when possible)
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\SealSecureChannel=4,1
+; Domain member: Digitally sign secure channel data (when possible)
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\SignSecureChannel=4,1
+; Domain member: Disable machine account password changes - Disabled
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\DisablePasswordChange=4,0
+; Domain member: Maximum machine account password age - 30 days
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\MaximumPasswordAge=4,30
+; Domain member: Require strong session key
+MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\RequireStrongKey=4,1
+
+; --- Interactive Logon ---
+; Interactive logon: Number of previous logons to cache - 1
+MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\CachedLogonsCount=1,"1"
+; Interactive logon: Do not require CTRL+ALT+DEL - Disabled (require it)
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\DisableCAD=4,0
+; Interactive logon: Machine inactivity limit - 900 seconds
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\InactivityTimeoutSecs=4,900
+; Interactive logon: Machine account lockout threshold - 10
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\MaxDevicePasswordFailedAttempts=4,10
+
+; --- Microsoft Network Client ---
+; Microsoft network client: Digitally sign communications (always)
+MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters\RequireSecuritySignature=4,1
+; Microsoft network client: Send unencrypted password to third-party SMB servers - Disabled
+MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters\EnablePlainTextPassword=4,0
+
+; --- Microsoft Network Server ---
+; Microsoft network server: Digitally sign communications (always)
+MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\RequireSecuritySignature=4,1
+
+; --- Network Access ---
+; Network access: Allow anonymous SID/Name translation - Disabled
+MACHINE\System\CurrentControlSet\Control\Lsa\TurnOffAnonymousBlock=4,1
+; Network access: Do not allow anonymous enumeration of SAM accounts
+MACHINE\System\CurrentControlSet\Control\Lsa\RestrictAnonymousSAM=4,1
+; Network access: Do not allow anonymous enumeration of SAM accounts and shares
+MACHINE\System\CurrentControlSet\Control\Lsa\RestrictAnonymous=4,1
+; Network access: Do not allow storage of passwords and credentials for network authentication
+MACHINE\System\CurrentControlSet\Control\Lsa\DisableDomainCreds=4,1
+; Network access: Let Everyone permissions apply to anonymous users - Disabled
+MACHINE\System\CurrentControlSet\Control\Lsa\EveryoneIncludesAnonymous=4,0
+; Network access: Restrict anonymous access to Named Pipes and Shares
+MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters\RestrictNullSessAccess=4,1
+; Network access: Restrict clients allowed to make remote calls to SAM
+MACHINE\System\CurrentControlSet\Control\Lsa\RestrictRemoteSAM=1,"O:BAG:BAD:(A;;RC;;;BA)"
+
+; --- Network Security ---
+; Network security: Do not store LAN Manager hash value on next password change
+MACHINE\System\CurrentControlSet\Control\Lsa\NoLMHash=4,1
+; Network security: LAN Manager authentication level - NTLMv2 only, refuse LM & NTLM
+MACHINE\System\CurrentControlSet\Control\Lsa\LmCompatibilityLevel=4,5
+; Network security: Minimum session security for NTLM SSP clients
+MACHINE\System\CurrentControlSet\Control\Lsa\MSV1_0\NTLMMinClientSec=4,537395200
+; Network security: Minimum session security for NTLM SSP servers
+MACHINE\System\CurrentControlSet\Control\Lsa\MSV1_0\NTLMMinServerSec=4,537395200
+; Network security: Allow LocalSystem NULL session fallback - Disabled
+MACHINE\System\CurrentControlSet\Control\Lsa\MSV1_0\allownullsessionfallback=4,0
+; Network security: Allow PKU2U authentication requests - Disabled (on-premises AD)
+MACHINE\System\CurrentControlSet\Control\Lsa\pku2u\AllowOnlineID=4,0
+; Network security: LDAP client signing requirements - Negotiate signing (1)
+MACHINE\System\CurrentControlSet\Services\ldap\LDAPClientIntegrity=4,1
+; Network security: Configure encryption types allowed for Kerberos
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters\SupportedEncryptionTypes=4,2147483640
+
+; --- System Cryptography ---
+; System cryptography: Force strong key protection
+MACHINE\Software\Policies\Microsoft\Cryptography\ForceKeyProtection=4,2
+; System cryptography: Use FIPS compliant algorithms
+MACHINE\System\CurrentControlSet\Control\Lsa\FIPSAlgorithmPolicy\Enabled=4,1
+
+; --- System Objects ---
+; System objects: Strengthen default permissions of internal system objects
+MACHINE\System\CurrentControlSet\Control\Session Manager\ProtectionMode=4,1
+
+; --- User Account Control ---
+; UAC: Admin Approval Mode for Built-in Administrator account
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\FilterAdministratorToken=4,1
+; UAC: Behavior of elevation prompt for administrators - Prompt for credentials on secure desktop (4)
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ConsentPromptBehaviorAdmin=4,1
+; UAC: Behavior of elevation prompt for standard users - Automatically deny (0)
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\ConsentPromptBehaviorUser=4,0
+; UAC: Detect application installations and prompt for elevation
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableInstallerDetection=4,1
+; UAC: Only elevate UIAccess applications installed in secure locations
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableSecureUIAPaths=4,1
+; UAC: Run all administrators in Admin Approval Mode
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA=4,1
+; UAC: Virtualize file and registry write failures to per-user locations
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\EnableVirtualization=4,1
+
+; --- WDigest ---
+; WDigest Authentication - Disabled
+MACHINE\System\CurrentControlSet\Control\SecurityProviders\WDigest\UseLogonCredential=4,0
+
+; --- LSASS Protection ---
+; Configure LSASS to run as a protected process
+MACHINE\System\CurrentControlSet\Control\Lsa\RunAsPPL=4,1
+
+; --- Safe Mode block for non-admins ---
+MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\SafeModeBlockNonAdmins=4,1
+
+; --- MSS Legacy Settings ---
+; MSS: DisableIPSourceRouting IPv6 - Highest protection
+MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters\DisableIPSourceRouting=4,2
+; MSS: DisableIPSourceRouting - Highest protection
+MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\DisableIPSourceRouting=4,2
+; MSS: EnableICMPRedirect - Disabled
+MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\EnableICMPRedirect=4,0
+
+; --- Event Log Sizes ---
+; Application log: 65536 KB
+MACHINE\Software\Policies\Microsoft\Windows\EventLog\Application\MaxSize=4,65536
+; Security log: 2097152 KB
+MACHINE\Software\Policies\Microsoft\Windows\EventLog\Security\MaxSize=4,2097152
+; System log: 65536 KB
+MACHINE\Software\Policies\Microsoft\Windows\EventLog\System\MaxSize=4,65536
+
+; --- Credential Caching ---
+; Network access: Do not allow storage of passwords and credentials
+MACHINE\System\CurrentControlSet\Control\Lsa\DisableDomainCreds=4,1
+
+; --- Hide file extensions (Low priority) ---
+; Show file extensions for known file types (0 = show)
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\HideFileExt=4,0
+
+; ------------------------------------------------------------
+; AUDIT POLICY (Advanced)
+; ------------------------------------------------------------
+[Event Audit]
+; These are legacy category-level settings.
+; Advanced subcategory audit policy is configured via auditpol
+; and Group Policy (not directly in .inf). The settings below
+; provide baseline coverage.
+
+; Audit account logon events - Success and Failure
+AuditAccountLogon=3
+; Audit account management - Success and Failure
+AuditAccountManage=3
+; Audit logon events - Success and Failure
+AuditLogonEvents=3
+; Audit object access - Success and Failure
+AuditObjectAccess=3
+; Audit policy change - Success and Failure
+AuditPolicyChange=3
+; Audit privilege use - Success and Failure
+AuditPrivilegeUse=3
+; Audit process tracking - Success
+AuditProcessTracking=1
+; Audit system events - Success and Failure
+AuditSystemEvents=3
+
+; ------------------------------------------------------------
+; USER RIGHTS ASSIGNMENT
+; ------------------------------------------------------------
+[Privilege Rights]
+; Access Credential Manager as a trusted caller - blank
+SeTrustedCredManAccessPrivilege =
+
+; Access this computer from the network - Remote Desktop Users
+SeNetworkLogonRight = *S-1-5-32-555
+
+; Act as part of the operating system - blank
+SeTcbPrivilege =
+
+; Allow log on locally - Users
+SeInteractiveLogonRight = *S-1-5-32-545
+
+; Allow log on through Remote Desktop Services - Remote Desktop Users
+SeRemoteInteractiveLogonRight = *S-1-5-32-555
+
+; Back up files and directories - Administrators
+SeBackupPrivilege = *S-1-5-32-544
+
+; Change the system time - Administrators, LOCAL SERVICE
+SeSystemtimePrivilege = *S-1-5-32-544,*S-1-5-19
+
+; Create a pagefile - Administrators
+SeCreatePagefilePrivilege = *S-1-5-32-544
+
+; Create a token object - blank
+SeCreateTokenPrivilege =
+
+; Create global objects - Administrators, LOCAL SERVICE, NETWORK SERVICE, SERVICE
+SeCreateGlobalPrivilege = *S-1-5-32-544,*S-1-5-19,*S-1-5-20,*S-1-5-6
+
+; Create permanent shared objects - blank
+SeCreatePermanentPrivilege =
+
+; Debug programs - Administrators
+SeDebugPrivilege = *S-1-5-32-544
+
+; Deny access to this computer from the network - Administrators, NT AUTHORITY\Local Account
+SeDenyNetworkLogonRight = *S-1-5-32-544,*S-1-5-113
+
+; Deny log on as a batch job - Administrators
+SeDenyBatchLogonRight = *S-1-5-32-544
+
+; Deny log on locally - Administrators
+SeDenyInteractiveLogonRight = *S-1-5-32-544
+
+; Deny log on as a service - Administrators
+SeDenyServiceLogonRight = *S-1-5-32-544
+
+; Deny log on through Remote Desktop Services - Administrators, NT AUTHORITY\Local Account
+SeDenyRemoteInteractiveLogonRight = *S-1-5-32-544,*S-1-5-113
+
+; Enable computer and user accounts to be trusted for delegation - blank
+SeEnableDelegationPrivilege =
+
+; Force shutdown from a remote system - Administrators
+SeRemoteShutdownPrivilege = *S-1-5-32-544
+
+; Impersonate a client after authentication - Administrators, LOCAL SERVICE, NETWORK SERVICE, SERVICE
+SeImpersonatePrivilege = *S-1-5-32-544,*S-1-5-19,*S-1-5-20,*S-1-5-6
+
+; Load and unload device drivers - Administrators
+SeLoadDriverPrivilege = *S-1-5-32-544
+
+; Lock pages in memory - blank
+SeLockMemoryPrivilege =
+
+; Manage auditing and security log - Administrators
+SeSecurityPrivilege = *S-1-5-32-544
+
+; Modify firmware environment values - Administrators
+SeSystemEnvironmentPrivilege = *S-1-5-32-544
+
+; Perform volume maintenance tasks - Administrators
+SeManageVolumePrivilege = *S-1-5-32-544
+
+; Profile single process - Administrators
+SeProfileSingleProcessPrivilege = *S-1-5-32-544
+
+; Restore files and directories - Administrators
+SeRestorePrivilege = *S-1-5-32-544
+
+; Take ownership of files or other objects - Administrators
+SeTakeOwnershipPrivilege = *S-1-5-32-544
+
+; ------------------------------------------------------------
+; SYSTEM ACCESS - Additional
+; ------------------------------------------------------------
+[System Access]
+; Guest account status - Disabled
+EnableGuestAccount = 0
+; Administrator account status - Enabled
+EnableAdminAccount = 1
+; Rename guest account (organisation should customise)
+NewGuestName = "Guest_Disabled"

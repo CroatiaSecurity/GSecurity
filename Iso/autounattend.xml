@@ -27,7 +27,7 @@
 			<FirstLogonCommands>
 				<SynchronousCommand wcm:action="add">
 					<Order>1</Order>
-					<CommandLine>powershell.exe "C:\Windows\Setup\Scripts\Bin\GSecurity.bat" -verb RunAs</CommandLine>
+					<CommandLine>powershell.exe "C:\Windows\Setup\Scripts\GSecurity.bat" -verb RunAs</CommandLine>
 				</SynchronousCommand>
 			</FirstLogonCommands>
 			<UserAccounts>

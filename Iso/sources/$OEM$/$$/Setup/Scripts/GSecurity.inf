@@ -25,6 +25,12 @@ PasswordComplexity = 0
 ClearTextPassword = 0
 ; Reversible encryption disabled
 RequireLogonToChangePassword = 0
+; Guest account status - Disabled
+EnableGuestAccount = 0
+; Administrator account status - Enabled
+EnableAdminAccount = 1
+; Rename guest account
+NewGuestName = "Guest_Disabled"
 
 ; ------------------------------------------------------------
 ; ACCOUNT POLICIES - Account Lockout Policy
@@ -66,8 +72,8 @@ MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\RequireStrongKey=4
 ; --- Interactive Logon ---
 ; Interactive logon: Number of previous logons to cache - 1
 MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\CachedLogonsCount=1,"1"
-; Interactive logon: Do not require CTRL+ALT+DEL - Disabled (require it)
-MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\DisableCAD=4,0
+; Interactive logon: Do not require CTRL+ALT+DEL - Enabled (skip it)
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\DisableCAD=4,1
 ; Interactive logon: Machine inactivity limit - 900 seconds
 MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\InactivityTimeoutSecs=4,900
 ; Interactive logon: Machine account lockout threshold - 10
@@ -291,14 +297,3 @@ SeRestorePrivilege = *S-1-5-32-544
 
 ; Take ownership of files or other objects - Administrators
 SeTakeOwnershipPrivilege = *S-1-5-32-544
-
-; ------------------------------------------------------------
-; SYSTEM ACCESS - Additional
-; ------------------------------------------------------------
-[System Access]
-; Guest account status - Disabled
-EnableGuestAccount = 0
-; Administrator account status - Enabled
-EnableAdminAccount = 1
-; Rename guest account (organisation should customise)
-NewGuestName = "Guest_Disabled"

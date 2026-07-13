@@ -74,8 +74,8 @@ MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters\RequireStrongKey=4
 MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\CachedLogonsCount=1,"1"
 ; Interactive logon: Do not require CTRL+ALT+DEL - Enabled (skip it)
 MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\DisableCAD=4,1
-; Interactive logon: Machine inactivity limit - 900 seconds
-MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\InactivityTimeoutSecs=4,900
+; Interactive logon: Machine inactivity limit - Disabled (Sentinel manages session security)
+MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\InactivityTimeoutSecs=4,0
 ; Interactive logon: Machine account lockout threshold - 10
 MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\MaxDevicePasswordFailedAttempts=4,10
 

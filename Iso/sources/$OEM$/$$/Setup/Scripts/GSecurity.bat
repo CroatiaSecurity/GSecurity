@@ -10,9 +10,9 @@ setlocal EnableExtensions EnableDelayedExpansion
 :: Script dir
 cd /d "%~dp0"
 
-:: Execute Powershell (.ps1) files alphabetically
+:: Execute Powershell (.ps1) files sequentially (order matters for dependencies)
 for /f "tokens=*" %%A in ('dir /b /o:n *.ps1') do (
-    Start "" powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -File "%%A" -Verb RunAs
+    powershell.exe -ExecutionPolicy Bypass -File "%%A"
 )
 
 :: Execute Registry (.reg) files alphabetically
@@ -25,27 +25,31 @@ takeown /f %windir%\System32\Oobe\useroobe.dll /A
 icacls %windir%\System32\Oobe\useroobe.dll /reset
 icacls %windir%\System32\Oobe\useroobe.dll /inheritance:r
 
-takeown /f "C:\Windows\System32\wbem\WmiPrvSE.exe" /A
-icacls "C:\Windows\System32\wbem\WmiPrvSE.exe" /reset
-icacls "C:\Windows\System32\wbem\WmiPrvSE.exe" /inheritance:r
+takeown /f C:\Windows\System32\wbem\WmiPrvSE.exe /A
+icacls C:\Windows\System32\wbem\WmiPrvSE.exe /reset
+icacls C:\Windows\System32\wbem\WmiPrvSE.exe /inheritance:r
 
-takeown /f "C:\Windows\System32\wbem\Wmiadap.exe" /A
-icacls "C:\Windows\System32\wbem\Wmiadap.exe" /reset
-icacls "C:\Windows\System32\wbem\Wmiadap.exe" /inheritance:r
+takeown /f C:\Windows\System32\wbem\Wmiadap.exe /A
+icacls C:\Windows\System32\wbem\Wmiadap.exe /reset
+icacls C:\Windows\System32\wbem\Wmiadap.exe /inheritance:r
 
-takeown /f "C:\Windows\System32\dllhost.exe" /A
-icacls "C:\Windows\System32\dllhost.exe" /reset
-icacls "C:\Windows\System32\dllhost.exe" /inheritance:r
+takeown /f C:\Windows\System32\dllhost.exe /A
+icacls C:\Windows\System32\dllhost.exe /reset
+icacls C:\Windows\System32\dllhost.exe /inheritance:r
+
+takeown /f C:\Windows\System32\conhost.exe /A
+icacls C:\Windows\System32\conhost.exe /reset
+icacls C:\Windows\System32\conhost.exe /inheritance:r
 
 takeown /f %windir%\system32\consent.exe /A
 icacls %windir%\system32\consent.exe /reset
 icacls %windir%\system32\consent.exe /inheritance:r
 icacls %windir%\system32\consent.exe /grant:r "Console Logon":RX
 
-takeown /f "%windir%\System32\winmm.dll" /A
-icacls "%windir%\System32\winmm.dll" /reset
-icacls "%windir%\System32\winmm.dll" /inheritance:r
-icacls "%windir%\System32\winmm.dll" /grant:r "Console Logon":RX
+takeown /f %windir%\System32\winmm.dll /A
+icacls %windir%\System32\winmm.dll /reset
+icacls %windir%\System32\winmm.dll /inheritance:r
+icacls %windir%\System32\winmm.dll /grant:r "Console Logon":RX
 
 :: UAC
 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "ConsentPromptBehaviorAdmin" /t REG_DWORD /d "5" /f
@@ -97,8 +101,14 @@ sc stop SNMP
 :: Users
 net user defaultuser0 /delete
 
+:: Label
+label C: Windows
+
+:: Bufferbloat
+netsh int tcp set global autotuninglevel=restricted
+
 :: Security Policy
 lgpo /s GSecurity.inf
 
 :: Restart
-shutdown /r /t 5
+shutdown /r /t 0

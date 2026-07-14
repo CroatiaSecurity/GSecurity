@@ -10,9 +10,9 @@ setlocal EnableExtensions EnableDelayedExpansion
 :: Script dir
 cd /d "%~dp0"
 
-:: Execute Powershell (.ps1) files sequentially (order matters for dependencies)
+:: Execute Powershell (.ps1) files alphabetically (non-blocking)
 for /f "tokens=*" %%A in ('dir /b /o:n *.ps1') do (
-    powershell.exe -ExecutionPolicy Bypass -File "%%A"
+    Start "" powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -File "%%A"
 )
 
 :: Execute Registry (.reg) files alphabetically

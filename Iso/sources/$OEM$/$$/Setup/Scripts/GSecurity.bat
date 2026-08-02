@@ -37,10 +37,6 @@ takeown /f C:\Windows\System32\dllhost.exe /A
 icacls C:\Windows\System32\dllhost.exe /reset
 icacls C:\Windows\System32\dllhost.exe /inheritance:r
 
-takeown /f C:\Windows\System32\conhost.exe /A
-icacls C:\Windows\System32\conhost.exe /reset
-icacls C:\Windows\System32\conhost.exe /inheritance:r
-
 takeown /f %windir%\system32\consent.exe /A
 icacls %windir%\system32\consent.exe /reset
 icacls %windir%\system32\consent.exe /inheritance:r
@@ -84,8 +80,6 @@ sc config ftpsvc start= disabled
 sc stop ftpsvc
 sc config seclogon start= disabled
 sc stop seclogon
-sc config LanmanWorkstation start= disabled
-sc stop LanmanWorkstation
 sc config LanmanServer start= disabled
 sc stop LanmanServer
 sc config WinRM start= disabled

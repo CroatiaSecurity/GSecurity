@@ -25,28 +25,6 @@ takeown /f %windir%\System32\Oobe\useroobe.dll /A
 icacls %windir%\System32\Oobe\useroobe.dll /reset
 icacls %windir%\System32\Oobe\useroobe.dll /inheritance:r
 
-takeown /f C:\Windows\System32\wbem\WmiPrvSE.exe /A
-icacls C:\Windows\System32\wbem\WmiPrvSE.exe /reset
-icacls C:\Windows\System32\wbem\WmiPrvSE.exe /inheritance:r
-
-takeown /f C:\Windows\System32\wbem\Wmiadap.exe /A
-icacls C:\Windows\System32\wbem\Wmiadap.exe /reset
-icacls C:\Windows\System32\wbem\Wmiadap.exe /inheritance:r
-
-takeown /f C:\Windows\System32\dllhost.exe /A
-icacls C:\Windows\System32\dllhost.exe /reset
-icacls C:\Windows\System32\dllhost.exe /inheritance:r
-
-takeown /f %windir%\system32\consent.exe /A
-icacls %windir%\system32\consent.exe /reset
-icacls %windir%\system32\consent.exe /inheritance:r
-icacls %windir%\system32\consent.exe /grant:r "Console Logon":RX
-
-takeown /f %windir%\System32\winmm.dll /A
-icacls %windir%\System32\winmm.dll /reset
-icacls %windir%\System32\winmm.dll /inheritance:r
-icacls %windir%\System32\winmm.dll /grant:r "Console Logon":RX
-
 :: UAC
 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "ConsentPromptBehaviorAdmin" /t REG_DWORD /d "5" /f
 Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "ConsentPromptBehaviorUser" /t REG_DWORD /d "1" /f
@@ -88,6 +66,11 @@ sc config RemoteRegistry start= disabled
 sc stop RemoteRegistry
 sc config SNMP start= disabled
 sc stop SNMP
+
+:: SvcHostSplitDisable - isolate every service into its own svchost process
+for /f "tokens=*" %%S in ('reg query "HKLM\SYSTEM\CurrentControlSet\Services"') do (
+    reg add "%%S" /v SvcHostSplitDisable /t REG_DWORD /d 1 /f >nul 2>&1
+)
 
 :: Bios tweak
 %windir%\system32\bcdedit.exe /set nx AlwaysOn

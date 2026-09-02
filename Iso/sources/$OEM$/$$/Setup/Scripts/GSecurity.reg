@@ -216,7 +216,7 @@ Windows Registry Editor Version 5.00
 "EnableLUA"=dword:00000001
 "PromptOnSecureDesktop"=dword:00000001
 "FilterAdministratorToken"=dword:00000001
-"ValidateAdminCodeSignatures"=dword:00000001
+"ValidateAdminCodeSignatures"=dword:00000000
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\Audit]
 "ProcessCreationIncludeCmdLine_Enabled"=dword:00000001
@@ -262,32 +262,32 @@ Windows Registry Editor Version 5.00
 "EnableInvocationHeader"=dword:00000001
 "OutputDirectory"="%SystemRoot%\\System32\\LogFiles\\PowerShell"
 
-; Constrained Language Mode via WDAC / system-wide (requires WDAC policy to enforce CLM;
-; this sets the registry hook that AMSI and logging use)
+; Constrained Language Mode - REMOVED (full language mode allowed)
+; __PSLockdownPolicy key is deleted on import so PowerShell runs unrestricted
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment]
-"__PSLockdownPolicy"="4"
+"__PSLockdownPolicy"=-
 
 ; Disable PowerShell v2 fallback (bypasses logging) - disable engine
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\PowerShell]
 "EnableScripts"=dword:00000001
-"ExecutionPolicy"="RemoteSigned"
+"ExecutionPolicy"="Unrestricted"
 "DisableRemoteExecution"=dword:00000001
 
 ; -----------------------------------------------------------------------------
-; SECTION 6 - SCRIPT HOST DISABLE
-; (Sentinel: LOLBin / wscript / cscript execution chains)
+; SECTION 6 - SCRIPT HOST (ENABLED)
+; WScript / CScript left enabled for local scripting use.
+; Remove the keys below or set Enabled=0 to re-block.
 ; -----------------------------------------------------------------------------
 
-; Disable WScript and CScript globally via policy
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Script Host\Settings]
-"Enabled"=dword:00000000
+"Enabled"=dword:00000001
 "ActiveDebugging"=dword:00000000
 "DisplayLogo"=dword:00000000
 "SilentTerminate"=dword:00000001
 "UseWINSAFER"=dword:00000001
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows Script Host\Settings]
-"Enabled"=dword:00000000
+"Enabled"=dword:00000001
 
 
 ; -----------------------------------------------------------------------------
@@ -347,8 +347,8 @@ Windows Registry Editor Version 5.00
 "9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2"="1"
 ; Block executable content from email/webmail (Sentinel: phishing chains)
 "BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550"="1"
-; Block executable files unless they meet prevalence/age/trusted list criteria
-"01443614-cd74-433a-b99e-2ecdc07bfc25"="1"
+; Block executable files unless they meet prevalence/age/trusted list criteria - AUDIT only
+"01443614-cd74-433a-b99e-2ecdc07bfc25"="2"
 ; Block execution of potentially obfuscated scripts (Sentinel: InvokeExpr/AMSI)
 "5BEB7EFE-FD9A-4556-801D-275E5FFC04CC"="1"
 ; Block JS/VBS from launching downloaded executable content

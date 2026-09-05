@@ -260,7 +260,7 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\PowerShell\Transcription]
 "EnableTranscripting"=dword:00000001
 "EnableInvocationHeader"=dword:00000001
-"OutputDirectory"="%SystemRoot%\\System32\\LogFiles\\PowerShell"
+"OutputDirectory"="C:\\Windows\\System32\\LogFiles\\PowerShell"
 
 ; Constrained Language Mode - REMOVED (full language mode allowed)
 ; __PSLockdownPolicy key is deleted on import so PowerShell runs unrestricted
@@ -981,8 +981,6 @@ Windows Registry Editor Version 5.00
 "NoStartBanner"=dword:00000001
 "NoWebServices"=dword:00000001
 "PreXPSP2ShellProtocolBehavior"=dword:00000000
-"NoDrives"=dword:00000001
-"NoCDROM"=dword:00000001
 "AlwaysUnloadDLL"=dword:00000001
 "NoOnlinePrintsWizard"=dword:00000001
 "NoPublishingWizard"=dword:00000001
